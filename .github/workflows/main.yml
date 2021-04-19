@@ -16,7 +16,7 @@ jobs:
           server: linux347.unoeuro.com
           username: stineplejdrup.dk
           password: ${{ secrets.ftp_password }}
-          server-dir: /public_html/kea/09_cms/radio_loud/wp-content/themes/radio_loud_theme
+          server-dir: /public_html/kea/09_cms/radio_loud/wp-content/themes/radio_loud_theme/
           exclude: .git*
             - .git*/**
             - .vscode*

@@ -29,3 +29,9 @@ p {
   font-family: 'Baloo 2', sans-serif;
   font-weight: 400;
 }
+
+/* HEADER */
+/* Fjern runde hjørner på LOUD-logo */
+.site-logo .custom-logo-link {
+  border-radius: 0%;
+}

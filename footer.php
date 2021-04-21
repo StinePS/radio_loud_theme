@@ -18,7 +18,7 @@
  <?php get_template_part('template-parts/footer/footer', 'widgets'); ?>
 		
 	<div id="footer1">
-		<div class="footer-container grid-1-3">
+		<div class="footer-container grid-4">
 		<div class="footer-column">
 			<p class="footer-header">Hent app'en</p>
 			<a href="https://apps.apple.com/dk/app/radio-loud/id1498746367?l=da">App Store</a>
@@ -26,7 +26,12 @@
 		</div>
 		<div class="footer-column">
 			<a href="#">Presse</a>
+		</div>
+		<div class="footer-column">
 			<a href="#">Job</a>
+		</div>
+		<div class="footer-column">
+			<a href="#">Praktikant på LOUD</a>
 		</div>
 		</div>
 	</div> <!-- #footer1 -->

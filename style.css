@@ -181,7 +181,7 @@ a {
 }
 
 .header_container2 a {
-  padding-left: 1rem;
+  padding: 1rem 0.75rem;
 }
 
 #loud_logo {

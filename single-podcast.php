@@ -14,7 +14,8 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-			<?php // Start the Loop.
+			<?php
+// Start the Loop.
 // Start the Loop.
 ?>while (have_posts()):
        the_post();

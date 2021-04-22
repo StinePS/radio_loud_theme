@@ -55,14 +55,14 @@ async function getJson() {
 
 function generateButtons() {
     categories.forEach(category => {
-        document.querySelector("#filtrering".innerHTML += `<button class="filter" data-podcast="$category.id">${category.name}</button>`)
+        document.querySelector("#podcast_filter".innerHTML += `<button class="filter" data-podcast="$category.id">${category.name}</button>`)
     })
 
 buttonListener();
 }
 
 function buttonListener() {
-    document.querySelectorAll("#filtrering button").forEach(knap => {
+    document.querySelectorAll("#podcast_filter button").forEach(knap => {
         knap.addEventlistener("click", filtrering);
     })
 }
@@ -81,7 +81,7 @@ function showPodcasts() {
 if (filterPodcast == "alle" || podcast.categories.includes(parseInt(filterPodcast))) {
     let clone = temp.cloneNode(true).content;
     clone.querySelector("img").src = podcast.billede.guid;
-    clone.querySelector("h2").textContent = podcast.title.rendered;
+    clone.querySelector("h2").innerHTML = podcast.title.rendered;
     clone.querySelector("short_description").innerHTML = podcast.kort_beskriv.rendered;
     clone.querySelector("article").addEventlistener("click", () => {
         location.href = podcast.link;

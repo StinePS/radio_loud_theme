@@ -60,8 +60,19 @@ a {
 
 /* HEADER */
 /* Fjern runde hjørner på LOUD-logo */
-.site-logo .custom-logo-link {
-  border-radius: 0%;
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#loud_logo {
+  width: 2rem;
+  height: 2rem;
+}
+
+#button_loud_live {
+  background-color: #da0a39;
 }
 
 /* ------------------------------------------ */

@@ -31,36 +31,17 @@
      'twentynineteen'
  ); ?></a>
 
-		<header id="masthead" class="<?php echo is_singular() &&
-  twentynineteen_can_show_post_thumbnail()
-      ? 'site-header featured-image'
-      : 'site-header'; ?>">
-
-			<div class="site-branding-container">
-				<?php get_template_part('template-parts/header/site', 'branding'); ?>
-			</div><!-- .site-branding-container -->
-
-			<?php if (is_singular() && twentynineteen_can_show_post_thumbnail()): ?>
-				<div class="site-featured-image">
-					<?php
-     twentynineteen_post_thumbnail();
-     the_post();
-     $discussion =
-         !is_page() && twentynineteen_can_show_post_thumbnail()
-             ? twentynineteen_get_discussion_data()
-             : null;
-
-     $classes = 'entry-header';
-     if (!empty($discussion) && absint($discussion->responses) > 0) {
-         $classes = 'entry-header has-discussion';
-     }
-     ?>
-					<div class="<?php echo $classes; ?>">
-						<?php get_template_part('template-parts/header/entry', 'header'); ?>
-					</div><!-- .entry-header -->
-					<?php rewind_posts(); ?>
-				</div>
-			<?php endif; ?>
+		<header>
+			<div class="header_container1">
+				<div id="loud_logo"><a href="/"><img src="https://stineplejdrup.dk/kea/09_cms/radio_loud/loud_logo.svg" alt="Radio Loud logo"></a></div>
+				<button id="button_loud_live">LOUD Live</button>
+			</div>
+			<div class="header_container2">
+			 <a href="https://stineplejdrup.dk/kea/09_cms/radio_loud/podcasts/">Podcasts</a>
+			 <a href="https://stineplejdrup.dk/kea/09_cms/radio_loud/sendeplan">Sendeplan</a>
+			 <a href="https://stineplejdrup.dk/kea/09_cms/radio_loud/loud-lab">LOUD LAB</a>
+			 <a href="https://stineplejdrup.dk/kea/09_cms/radio_loud/om-os">Om os</a>
+			</div>
 		</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

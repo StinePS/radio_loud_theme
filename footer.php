@@ -25,13 +25,13 @@
 			<a href="https://play.google.com/store/apps/details?id=dk.uptime.RadioLoud">Google Play</a>
 		</div>
 		<div class="footer-column">
-			<a href="#">Presse</a>
+			<a href="https://stineplejdrup.dk/kea/09_cms/radio_loud/presse/">Presse</a>
 		</div>
 		<div class="footer-column">
-			<a href="#">Job</a>
+			<a href="https://stineplejdrup.dk/kea/09_cms/radio_loud/job/">Job</a>
 		</div>
 		<div class="footer-column">
-			<a href="#">Praktikant på LOUD</a>
+			<a href="https://stineplejdrup.dk/kea/09_cms/radio_loud/praktikant-hos-loud/">Praktikant hos LOUD</a>
 		</div>
 		</div>
 	</div> <!-- #footer1 -->

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="forside.css">
+    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&family=Gugi&display=swap" rel="stylesheet">
@@ -13,9 +13,17 @@
 
 <body>
     <main>
-        <h1>Radio Loud - den vildeste lydmaskine</h1>
+        <div id="red">
+            <h1>Radio Loud - den vildeste lydmaskine</h1>
+            <div id="logo_container">
+                <div id="logo_sprite"></div>
+            </div>
+        </div>
         <section id="karrusel">
-            <h2>Lær at tage billeder i gråtoner</h2>
+            <div id="h2kar">
+                <h2>Lær at tage billeder i gråtoner</h2>
+            </div>
+            <img src="https://placeimg.com/640/480/any/grayscale" alt="">
         </section>
         <h2>De nyeste podcasts</h2>
 
@@ -38,9 +46,9 @@
 
     <template>
         <article>
-            <img src="" alt="">
-            <h3 class=""></h3>
-            <p class=""></p>
+            <img src="" alt="" id="">
+            <h3 class="titel"></h3>
+            <p class="album"></p>
         </article>
     </template>
 </body>
@@ -74,10 +82,10 @@
         const instagramdata = await fetch(urlInstagram);
         const facebookdata = await fetch(urlFacebook);
 
-        nye = await data.json();
-        populaere = await data.json();
-        instagram = await data.json();
-        facebook = await data.json();
+        nye = await nyedata.json();
+        populaere = await popdata.json();
+        instagram = await instagramdata.json();
+        facebook = await facebookdata.json();
 
         visNye();
         visPopulaere();
@@ -87,22 +95,22 @@
 
     function visNye() {
         console.log(nye);
-        nye.forEach(ret => {
+        nye.forEach(ny => {
             let klon = temp.cloneNode(true).content;
-            klon.querySelector("img").src = ny.billede.guid;
-            klon.querySelector("h3").textContent = ny.titel.rendered;
-            klon.querySelector("p").innerHTML = ny.kort_beskriv;
+            klon.querySelector("img").src = ny.profilbillede.guid;
+            klon.querySelector(".titel").textContent = ny.title.rendered;
+            klon.querySelector(".album").innerHTML = ny.album;
             secNye.appendChild(klon);
-        })
+        });
     }
 
     function visPopulaere() {
         console.log(populaere);
         populaere.forEach(pop => {
             let klon = temp.cloneNode(true).content;
-            klon.querySelector("img").src = ny.profilbillede.guid;
-            klon.querySelector("h3").textContent = ny.title.rendered;
-            klon.querySelector("p").innerHTML = ny.beskrivelse;
+            klon.querySelector("img").src = pop.profilbillede.guid;
+            klon.querySelector(".titel").textContent = pop.title.rendered;
+            klon.querySelector(".album").innerHTML = pop.album;
             secPop.appendChild(klon);
         })
     }
@@ -111,9 +119,9 @@
         console.log(instagram);
         instagram.forEach(insta => {
             let klon = temp.cloneNode(true).content;
-            klon.querySelector("img").src = ny.billede.guid;
-            klon.querySelector("h3").textContent = ny.titel.rendered;
-            klon.querySelector("p").innerHTML = ny.kort_beskriv;
+            klon.querySelector("img").src = insta.profilbillede.guid;
+            klon.querySelector(".titel").textContent = insta.title.rendered;
+            klon.querySelector(".album").innerHTML = insta.album;
             secInsta.appendChild(klon);
         })
     }
@@ -122,10 +130,12 @@
         console.log(facebook);
         facebook.forEach(face => {
             let klon = temp.cloneNode(true).content;
-            klon.querySelector("img").src = ny.billede.guid;
-            klon.querySelector("h3").textContent = ny.titel.rendered;
-            klon.querySelector("p").innerHTML = ny.kort_beskriv;
+            klon.querySelector("img").src = face.profilbillede.guid;
+            klon.querySelector(".titel").textContent = face.title.rendered;
+            klon.querySelector(".album").innerHTML = face.album;
             secFace.appendChild(klon);
         })
     }
+
+    getJson();
 </script></html>

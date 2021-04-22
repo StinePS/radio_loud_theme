@@ -9,11 +9,10 @@
  * @since Twenty Nineteen 1.0
  */
 
-get_header();
-?>
+get_header(); ?>
 
 <div id="primary" class="content-area">
-    <main id="main" class="site-main">
+    <main id="frontpage_main" class="site-main">
 
         <div id="red">
             <h1>Radio Loud - den vildeste lydmaskine</h1>
@@ -127,5 +126,4 @@ get_header();
     </main><!-- #main -->
 </div><!-- #primary -->
 
-<?php
-get_footer();
+<?php get_footer();

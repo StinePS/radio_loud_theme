@@ -82,7 +82,7 @@ if (filterPodcast == "alle" || podcast.categories.includes(parseInt(filterPodcas
     let clone = temp.cloneNode(true).content;
     clone.querySelector("img").src = podcast.billede.guid;
     clone.querySelector("h2").innerHTML = podcast.title.rendered;
-    clone.querySelector("short_description").innerHTML = podcast.kort_beskriv.rendered;
+    clone.querySelector(".short_description").innerHTML = podcast.kort_beskriv.rendered;
     clone.querySelector("article").addEventlistener("click", () => {
         location.href = podcast.link;
     })

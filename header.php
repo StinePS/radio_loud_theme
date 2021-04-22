@@ -33,7 +33,7 @@
 
 		<header>
 			<div class="header_container1">
-				<div id="loud_logo"><a href="/"><img src="https://stineplejdrup.dk/kea/09_cms/radio_loud/loud_logo.svg" alt="Radio Loud logo"></a></div>
+				<div id="loud_logo"><a href="/kea/09_cms/radio_loud"><img src="https://stineplejdrup.dk/kea/09_cms/radio_loud/loud_logo.svg" alt="Radio Loud logo"></a></div>
 				<button id="button_loud_live">LOUD Live</button>
 			</div>
 			<div class="header_container2">

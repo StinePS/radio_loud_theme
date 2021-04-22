@@ -18,11 +18,13 @@ get_header(); ?>
 
 <template>
     <article>
-        <img src="" alt="">
-        <div>
-            <h2></h2>
-            <p class="short_description"></p>
-        </div>
+        <a href="">
+            <img src="" alt="">
+            <div>
+                <h2></h2>
+                <p class="short_description"></p>
+            </div>
+        </a>
     </article>
 </template>
 
@@ -83,9 +85,7 @@ if (filterPodcast == "alle" || podcast.categories.includes(parseInt(filterPodcas
     clone.querySelector("img").src = podcast.billede.guid;
     clone.querySelector("h2").innerHTML = podcast.title.rendered;
     clone.querySelector(".short_description").innerHTML = podcast.kort_beskriv.rendered;
-    clone.querySelector("article").addEventlistener("click", () => {
-        location.href = podcast.link;
-    })
+    clone.querySelector("a").href= podcast.link.href;
     container.appendChild(clone);
 }
 

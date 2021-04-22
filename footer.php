@@ -16,7 +16,7 @@
 
 <footer id="colophon" class="site-footer">
  <?php get_template_part('template-parts/footer/footer', 'widgets'); ?>
-		
+
 	<div id="footer1">
 		<div class="footer-container grid-4">
 		<div class="footer-column">
@@ -40,13 +40,13 @@
 <div class="footer-container grid-4">
 	<div class="footer-column">
 		<p class="footer-header">Radio LOUD</p>
-		<a href="kontakt@radioloud.dk">kontakt@radioloud.dk</a>	
+		<a href="kontakt@radioloud.dk">kontakt@radioloud.dk</a>
 		<p>+45 32 42 17 14</p>
 	</div>
 
 
 	<div class="footer-column">
-		<address> 
+		<address>
 		Programredaktion <br>
 		Wildersgade 10B, 2. sal <br>
 		1408 København

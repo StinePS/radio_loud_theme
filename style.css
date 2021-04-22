@@ -30,13 +30,13 @@ main {
   margin: 0 auto;
 }
 
-#red {
+/* #red {
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: white;
   background-color: red;
   padding: 35px;
-}
+} */
 
 #logo_container {
   position: absolute;
@@ -76,16 +76,15 @@ main {
   /*    text-align: center;*/
 }
 
-article {
-  /*
+/* article {
     border: 3px solid whitesmoke;
     border-radius: 30px;
-    padding: 30px; */
-  background-color: deeppink;
-}
+    padding: 30px;
+} */
 
 h1 {
   font-family: 'Gugi', cursive;
+  text-transform: uppercase;
   font-size: 3rem;
 }
 
@@ -118,10 +117,9 @@ p {
   /* margin: calc(3 * 1rem) calc(10% + 60px) 1rem; */
   margin: 0;
   text-align: center;
-  background-color: red;
-  color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  color: #000000;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .entry .entry-title:before,
@@ -133,6 +131,7 @@ address {
   font-family: 'Baloo 2', sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: #ffffff;
   font-size: 0.8rem;
   line-height: 1.3;
   margin: 0.75rem 0;
@@ -211,11 +210,11 @@ a {
 }
 
 #footer1 {
-  background-color: #8e8e8e;
+  background-color: #fd92c5;
 }
 
 #footer2 {
-  background-color: #c1bdbd;
+  background-color: #db103a;
 }
 
 .footer-header {
@@ -223,12 +222,14 @@ a {
 }
 
 footer p {
+  color: #ffffff;
   font-size: 0.8rem;
   line-height: 1;
   margin: 0;
 }
 
 footer a {
+  color: #fff;
   font-size: 0.8rem;
   line-height: 1;
 }

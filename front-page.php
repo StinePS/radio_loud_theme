@@ -14,8 +14,8 @@ get_header(); ?>
 <div id="primary" class="content-area">
     <main id="frontpage_main" class="site-main">
 
-        <div id="red">
-            <h1>Radio Loud - den vildeste lydmaskine</h1>
+        <div>
+            <h1>Radio Loud</h1>
             <div id="logo_container">
                 <div id="logo_sprite"></div>
             </div>
@@ -27,7 +27,7 @@ get_header(); ?>
             <img src="https://placeimg.com/640/480/any/grayscale" alt="">
         </section>
 
-        <h2>De nyeste podcasts</h2>
+        <h2>Nyeste podcasts</h2>
         <section id="nye">
             <article>
                 <img src="http://krarupkling.dk/kea/2_semester/tema_9/billederloud/aktion.jpg" alt="">
@@ -51,7 +51,7 @@ get_header(); ?>
             </article>
         </section>
 
-        <h2>De mest populære podcasts</h2>
+        <h2>Populære podcasts</h2>
         <section id="pop">
             <article>
                 <img src="http://krarupkling.dk/kea/2_semester/tema_9/billederloud/bare_sex.jpg" alt="">

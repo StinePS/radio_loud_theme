@@ -41,7 +41,7 @@ let podcasts;
 let categories;
 let filterPodcast = "alle";
 const dbUrl = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/podcasts?per_page=100";
-const catUrl = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/categories";
+const catUrl = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/categories?per_page=100";
 
 async function getJson() {
     const data = await fetch(dbUrl);

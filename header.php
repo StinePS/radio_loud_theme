@@ -32,9 +32,16 @@
  ); ?></a>
 
 		<header>
-			<div class="header_container">
-				<div id="loud_logo"><a href="/"><img src="https://stineplejdrup.dk/kea/09_cms/radio_loud/loud_logo.jpg" alt="Radio Loud logo"></a></div>
-				<button id="button_loud_live">LOUD Live</button></div>
+			<div class="header_container1">
+				<div id="loud_logo"><a href="/"><img src="https://stineplejdrup.dk/kea/09_cms/radio_loud/loud_logo.svg" alt="Radio Loud logo"></a></div>
+				<button id="button_loud_live">LOUD Live</button>
+			</div>
+			<div class="header_container2">
+			 <a href="https://stineplejdrup.dk/kea/09_cms/radio_loud/podcasts">Podcasts</a>
+			 <a href="https://stineplejdrup.dk/kea/09_cms/radio_loud/sendeplan">Sendeplan</a>
+			 <a href="https://stineplejdrup.dk/kea/09_cms/radio_loud/loud-lab">LOUD LAB</a>
+			 <a href="https://stineplejdrup.dk/kea/09_cms/radio_loud/om-os">Om os</a>
+			</div>
 		</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

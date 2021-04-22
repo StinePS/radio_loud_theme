@@ -164,10 +164,19 @@ a {
   border-radius: 0%;
 }
 
-.header_container {
+.header_container1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+
+.header_container2 {
+  text-align: right;
+}
+
+.header_container2 a {
+  padding-left: 1rem;
 }
 
 #loud_logo {

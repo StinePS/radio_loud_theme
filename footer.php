@@ -31,7 +31,7 @@
 			<a href="https://stineplejdrup.dk/kea/09_cms/radio_loud/job/">Job</a>
 		</div>
 		<div class="footer-column">
-			<a href="https://stineplejdrup.dk/kea/09_cms/radio_loud/praktikant-pa-loud/">Praktikant på LOUD</a>
+			<a href="https://stineplejdrup.dk/kea/09_cms/radio_loud/praktikant-hos-loud/">Praktikant hos LOUD</a>
 		</div>
 		</div>
 	</div> <!-- #footer1 -->

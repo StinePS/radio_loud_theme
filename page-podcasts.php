@@ -16,15 +16,6 @@ get_header(); ?>
 
 <!-- Vores kode -->
 
-<<<<<<< HEAD
-<template>
-    <article>
-        <img src="" alt="">
-        <div>
-            <h2></h2>
-            <p class="short_description"></p>
-        </div>
-=======
         <div class="overskrift">
             <h1>Podc<div class="red">a</div><div class="pink">s</div><div class="blue">t</div></h1>
         </div>
@@ -38,7 +29,6 @@ get_header(); ?>
                 <p class="short_description"></p>
             </div>
         </a>
->>>>>>> origin/master
     </article>
 </template>
 
@@ -48,11 +38,6 @@ get_header(); ?>
             <button data-podcasts="alle">Alle</button>
         </nav>
         <section id="podcast_gallery">
-<<<<<<< HEAD
-
-=======
-
->>>>>>> origin/master
         </section>
     </main>
 
@@ -102,15 +87,8 @@ if (filterPodcast == "alle" || podcast.categories.includes(parseInt(filterPodcas
     let clone = temp.cloneNode(true).content;
     clone.querySelector("img").src = podcast.billede.guid;
     clone.querySelector("h2").innerHTML = podcast.title.rendered;
-<<<<<<< HEAD
-    clone.querySelector("short_description").innerHTML = podcast.kort_beskriv.rendered;
-    clone.querySelector("article").addEventlistener("click", () => {
-        location.href = podcast.link;
-    })
-=======
     clone.querySelector(".short_description").innerHTML = podcast.kort_beskriv.rendered;
     clone.querySelector("a").href= podcast.link.href;
->>>>>>> origin/master
     container.appendChild(clone);
 }
 

@@ -43,7 +43,7 @@ get_header(); ?>
         </section>
 
     </main><!-- #main -->
-</div><!-- #primary -->
+
 
 <template>
     <article>
@@ -141,4 +141,5 @@ get_header(); ?>
     getJson();
 
 </script>
+</div><!-- #primary -->
 <?php get_footer();

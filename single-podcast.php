@@ -11,63 +11,6 @@
 
 get_header(); ?>
 
-<<<<<<< HEAD
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-
-			<?php
-// Start the Loop.
-// Start the Loop.
-?>while (have_posts()):
-       the_post();
-
-       get_template_part('template-parts/content/content', 'single');
-
-       if (is_singular('attachment')) {
-           // Parent post navigation.
-           the_post_navigation([
-               /* translators: %s: Parent post link. */
-               'prev_text' => sprintf(
-                   __(
-                       '<span class="meta-nav">Published in</span><span class="post-title">%s</span>',
-                       'twentynineteen'
-                   ),
-                   '%title'
-               ),
-           ]);
-       } elseif (is_singular('post')) {
-           // Previous/next post navigation.
-           the_post_navigation([
-               'next_text' =>
-                   '<span class="meta-nav" aria-hidden="true">' .
-                   __('Next Post', 'twentynineteen') .
-                   '</span> ' .
-                   '<span class="screen-reader-text">' .
-                   __('Next post:', 'twentynineteen') .
-                   '</span> <br/>' .
-                   '<span class="post-title">%title</span>',
-               'prev_text' =>
-                   '<span class="meta-nav" aria-hidden="true">' .
-                   __('Previous Post', 'twentynineteen') .
-                   '</span> ' .
-                   '<span class="screen-reader-text">' .
-                   __('Previous post:', 'twentynineteen') .
-                   '</span> <br/>' .
-                   '<span class="post-title">%title</span>',
-           ]);
-       }
-
-       // If comments are open or we have at least one comment, load up the comment template.
-       if (comments_open() || get_comments_number()) {
-           comments_template();
-       }
-   endwhile;
-// End the loop.
-?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-=======
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
 
@@ -124,6 +67,5 @@ get_header(); ?>
 
         </script>
 </section><!-- #primary -->
->>>>>>> origin/master
 
 <?php get_footer();

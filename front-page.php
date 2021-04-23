@@ -15,7 +15,10 @@ get_header(); ?>
     <main id="frontpage_main" class="site-main">
 
         <div class="overskrift">
-            <h1>Radio L<div class="red">o</div><div class="pink">u</div><div class="blue">d</div></h1>
+            <h1>Radio L<div class="red">o</div>
+                <div class="pink">u</div>
+                <div class="blue">d</div>
+            </h1>
         </div>
         <section id="karrusel">
             <div id="h2kar">
@@ -24,103 +27,118 @@ get_header(); ?>
             <img src="https://placeimg.com/640/480/any/grayscale" alt="">
         </section>
 
-        <h2>Nyeste podcasts</h2>
         <section id="nye">
-            <article>
-                <img src="http://krarupkling.dk/kea/2_semester/tema_9/billederloud/aktion.jpg" alt="">
-                <h3>Aktion</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </article>
-            <article>
-                <img src="http://krarupkling.dk/kea/2_semester/tema_9/billederloud/aldrig_mor.jpg" alt="">
-                <h3>Aldrig Mor</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </article>
-            <article>
-                <img src="http://krarupkling.dk/kea/2_semester/tema_9/billederloud/alis_stemmer.jpg" alt="">
-                <h3>Alis Stemmer</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </article>
-            <article>
-                <img src="http://krarupkling.dk/kea/2_semester/tema_9/billederloud/aloha.jpg" alt="">
-                <h3>Aloha</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </article>
         </section>
+        <h2>De mest populære podcasts</h2>
 
-        <h2>Populære podcasts</h2>
         <section id="pop">
-            <article>
-                <img src="http://krarupkling.dk/kea/2_semester/tema_9/billederloud/bare_sex.jpg" alt="">
-                <h3>Bare Sex</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </article>
-            <article>
-                <img src="http://krarupkling.dk/kea/2_semester/tema_9/billederloud/bibelen.jpg" alt="">
-                <h3>Bibelklubben</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </article>
-            <article>
-                <img src="http://krarupkling.dk/kea/2_semester/tema_9/billederloud/boern_kemo.jpg" alt="">
-                <h3>I får børn - jeg får kemo</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </article>
-            <article>
-                <img src="http://krarupkling.dk/kea/2_semester/tema_9/billederloud/spk.jpg" alt="">
-                <h3>S P eller K</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </article>
         </section>
-
         <h2>Instagram</h2>
-        <section id="insta">
-            <article>
-                <img src="http://krarupkling.dk/kea/2_semester/tema_9/billederloud/insta1.png" alt="">
-                <h3>ADHD</h3>
-                <p></p>
-            </article>
-            <article>
-                <img src="http://krarupkling.dk/kea/2_semester/tema_9/billederloud/insta2.png" alt="">
-                <h3>Fucking Træt!</h3>
-                <p></p>
-            </article>
-            <article>
-                <img src="http://krarupkling.dk/kea/2_semester/tema_9/billederloud/insta3.png" alt="">
-                <h3>Er debatten fri?</h3>
-                <p></p>
-            </article>
-            <article>
-                <img src="http://krarupkling.dk/kea/2_semester/tema_9/billederloud/insta4.png" alt="">
-                <h3>Tourette og sex?</h3>
-                <p></p>
-            </article>
-        </section>
 
+        <section id="insta">
+        </section>
         <h2>Facebook</h2>
+
         <section id="face">
-            <article>
-                <img src="http://krarupkling.dk/kea/2_semester/tema_9/billederloud/face1.png" alt="">
-                <h3>Ondt i sjælen</h3>
-                <p></p>
-            </article>
-            <article>
-                <img src="http://krarupkling.dk/kea/2_semester/tema_9/billederloud/face2.png" alt="">
-                <h3>Religiøs i det offentlige rum</h3>
-                <p></p>
-            </article>
-            <article>
-                <img src="http://krarupkling.dk/kea/2_semester/tema_9/billederloud/face3.png" alt="">
-                <h3>Bliver det den store fest efter corona?</h3>
-                <p></p>
-            </article>
-            <article>
-                <img src="http://krarupkling.dk/kea/2_semester/tema_9/billederloud/face4.png" alt="">
-                <h3>Anderledes</h3>
-                <p></p>
-            </article>
         </section>
 
     </main><!-- #main -->
 </div><!-- #primary -->
 
+<template>
+    <article>
+        <img src="" alt="" id="">
+        <h3 class="titel"></h3>
+        <p class="album"></p>
+    </article>
+</template>
+
+<script>
+    //Opretter konstanter for rest api
+    const urlNye = "http://krarupkling.dk/kea/2_semester/tema_9/passion/wp-json/wp/v2/sang?per_page=100";
+    const urlPop = "http://krarupkling.dk/kea/2_semester/tema_9/passion/wp-json/wp/v2/sang?per_page=100";
+    const urlInstagram = "http://krarupkling.dk/kea/2_semester/tema_9/passion/wp-json/wp/v2/sang?per_page=100";
+    const urlFacebook = "http://krarupkling.dk/kea/2_semester/tema_9/passion/wp-json/wp/v2/sang?per_page=100";
+
+
+    //Opretter variabler
+    let nye;
+    let populaere;
+    let instagram;
+    let facebook;
+
+    //Opretter variabler for template og section
+    let temp = document.querySelector("template");
+    let secNye = document.querySelector("#nye");
+    let secPop = document.querySelector("#pop");
+    let secInsta = document.querySelector("#insta");
+    let secFace = document.querySelector("#face");
+
+
+    //Henter data fra rest api og kalder funktionen visNye / visPop / visInstagram / visFacebook
+    async function getJson() {
+
+        const nyedata = await fetch(urlNye);
+        const popdata = await fetch(urlPop);
+        const instagramdata = await fetch(urlInstagram);
+        const facebookdata = await fetch(urlFacebook);
+
+        nye = await nyedata.json();
+        populaere = await popdata.json();
+        instagram = await instagramdata.json();
+        facebook = await facebookdata.json();
+
+        visNye();
+        visPopulaere();
+        visInstagram();
+        visFacebook();
+    }
+
+    function visNye() {
+        console.log(nye);
+        nye.forEach(ny => {
+            let klon = temp.cloneNode(true).content;
+            klon.querySelector("img").src = ny.profilbillede.guid;
+            klon.querySelector(".titel").textContent = ny.title.rendered;
+            klon.querySelector(".album").innerHTML = ny.album;
+            secNye.appendChild(klon);
+        });
+    }
+
+    function visPopulaere() {
+        console.log(populaere);
+        populaere.forEach(pop => {
+            let klon = temp.cloneNode(true).content;
+            klon.querySelector("img").src = pop.profilbillede.guid;
+            klon.querySelector(".titel").textContent = pop.title.rendered;
+            klon.querySelector(".album").innerHTML = pop.album;
+            secPop.appendChild(klon);
+        })
+    }
+
+    function visInstagram() {
+        console.log(instagram);
+        instagram.forEach(insta => {
+            let klon = temp.cloneNode(true).content;
+            klon.querySelector("img").src = insta.profilbillede.guid;
+            klon.querySelector(".titel").textContent = insta.title.rendered;
+            klon.querySelector(".album").innerHTML = insta.album;
+            secInsta.appendChild(klon);
+        })
+    }
+
+    function visFacebook() {
+        console.log(facebook);
+        facebook.forEach(face => {
+            let klon = temp.cloneNode(true).content;
+            klon.querySelector("img").src = face.profilbillede.guid;
+            klon.querySelector(".titel").textContent = face.title.rendered;
+            klon.querySelector(".album").innerHTML = face.album;
+            secFace.appendChild(klon);
+        })
+    }
+
+    getJson();
+
+</script>
 <?php get_footer();

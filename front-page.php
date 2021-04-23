@@ -27,26 +27,30 @@ get_header(); ?>
             <img src="https://placeimg.com/640/480/any/grayscale" alt="">
         </section>
 
-        <h3>Nyeste podcasts</h3>
-        <section id="nye">
+        <section>
+            <h3>Nyeste podcasts</h3>
+            <div id="nye" class="post_wrapper">
+            </div>
+        </section>
+
+        <section>
+            <h3>Populære podcasts</h3>
+            <div id="pop" class="post_wrapper">
+            </div>
         </section>
 
 
-        <h3>Populære podcasts</h3>
-
-        <section id="pop">
+        <section>
+            <h3>Instagram</h3>
+            <div id="insta" class="post_wrapper">
+            </div>
         </section>
 
 
-        <h3>Instagram</h3>
-
-        <section id="insta">
-        </section>
-
-
-        <h3>Facebook</h3>
-
-        <section id="face">
+        <section>
+            <h3>Facebook</h3>
+            <div id="face" class="post_wrapper">
+            </div>
         </section>
 
     </main><!-- #main -->
@@ -55,10 +59,11 @@ get_header(); ?>
 <template>
     <article>
         <img src="" alt="" id="">
-        <h3 class="titel"></h3>
+        <h4 class="titel hidden"></h3>
         <p class="short_description"></p>
     </article>
 </template>
+
 
 <script>
     //Opretter konstanter for rest api

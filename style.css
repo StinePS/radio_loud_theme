@@ -6,6 +6,7 @@ Description:  Twenty Nineteen Child Theme
 Author:      KEA 2. sem. Gruppe 2
 */
 
+/* ------------------------------------------ */
 /* FONTS */
 
 * {
@@ -162,7 +163,6 @@ a {
 }
 
 /* ------------------------------------------ */
-
 /* GRIDS */
 
 @media (min-width: 768px) {
@@ -174,8 +174,8 @@ a {
 }
 
 /* ------------------------------------------ */
-
 /* HEADER */
+
 /* Fjern runde hjørner på LOUD-logo */
 .site-logo .custom-logo-link {
   border-radius: 0%;
@@ -212,7 +212,6 @@ a {
 }
 
 /* ------------------------------------------ */
-
 /* FOOTER */
 
 .footer-container {
@@ -251,6 +250,15 @@ footer a {
   color: #fff;
   font-size: 0.8rem;
   line-height: 1;
+}
+
+/* ------------------------------------------ */
+/* PODCASTGALLERI */
+
+#podcast_gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
 }
 
 /* ------------------------------------------ */

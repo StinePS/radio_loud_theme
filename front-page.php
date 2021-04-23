@@ -59,7 +59,7 @@ get_header(); ?>
 <template>
     <article>
         <img src="" alt="" id="">
-        <h4 class="titel hidden"></h3>
+        <h4 class="titel hidden"></h4>
         <p class="short_description"></p>
     </article>
 </template>

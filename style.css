@@ -31,28 +31,12 @@ main {
   margin: 0 auto;
 }
 
-/* #red {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  color: white;
-  background-color: red;
-  padding: 35px;
-} */
-
-#logo_container {
-  position: absolute;
-  top: 19.5vw;
-  left: 68vw;
-}
-
-#logo_sprite {
-  background-image: url(billeder/loud_logo.jpg);
-  background-size: cover;
-  width: 150px;
-  height: 150px;
+section {
+  padding-top: 1rem;
 }
 
 #karrusel {
+  padding: 0;
   text-align: right;
   background-color: dimgrey;
   display: grid;

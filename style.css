@@ -142,6 +142,24 @@ a {
   font-weight: 400;
 }
 
+.red {
+  color: #db103a;
+}
+
+.pink {
+  color: #fd69af;
+}
+
+.blue {
+  color: #3d5ecb;
+}
+
+.red,
+.pink,
+.blue {
+  display: inline;
+}
+
 /* ------------------------------------------ */
 
 /* GRIDS */

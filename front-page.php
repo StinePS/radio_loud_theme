@@ -14,11 +14,8 @@ get_header(); ?>
 <div id="primary" class="content-area">
     <main id="frontpage_main" class="site-main">
 
-        <div>
-            <h1>Radio Loud</h1>
-            <div id="logo_container">
-                <div id="logo_sprite"></div>
-            </div>
+        <div class="overskrift">
+            <h1>Radio L<div class="red">o</div><div class="pink">u</div><div class="blue">d</div></h1>
         </div>
         <section id="karrusel">
             <div id="h2kar">

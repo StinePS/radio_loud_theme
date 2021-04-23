@@ -17,7 +17,7 @@ get_header(); ?>
 <!-- Vores kode -->
 
 <div class="overskrift">
-            <h1>Podca<div class="red">s</div><div class="pink">t</div><div class="blue">s</div></h1>
+            <h1>Podc<div class="red">a</div><div class="pink">s</div><div class="blue">t</div></h1>
         </div>
 
 <template>

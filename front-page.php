@@ -27,17 +27,24 @@ get_header(); ?>
             <img src="https://placeimg.com/640/480/any/grayscale" alt="">
         </section>
 
+        <h3>Nyeste podcasts</h3>
         <section id="nye">
         </section>
-        <h2>De mest populære podcasts</h2>
+
+
+        <h3>Populære podcasts</h3>
 
         <section id="pop">
         </section>
-        <h2>Instagram</h2>
+
+
+        <h3>Instagram</h3>
 
         <section id="insta">
         </section>
-        <h2>Facebook</h2>
+
+
+        <h3>Facebook</h3>
 
         <section id="face">
         </section>
@@ -49,16 +56,16 @@ get_header(); ?>
     <article>
         <img src="" alt="" id="">
         <h3 class="titel"></h3>
-        <p class="album"></p>
+        <p class="short_description"></p>
     </article>
 </template>
 
 <script>
     //Opretter konstanter for rest api
-    const urlNye = "http://krarupkling.dk/kea/2_semester/tema_9/passion/wp-json/wp/v2/sang?per_page=100";
-    const urlPop = "http://krarupkling.dk/kea/2_semester/tema_9/passion/wp-json/wp/v2/sang?per_page=100";
-    const urlInstagram = "http://krarupkling.dk/kea/2_semester/tema_9/passion/wp-json/wp/v2/sang?per_page=100";
-    const urlFacebook = "http://krarupkling.dk/kea/2_semester/tema_9/passion/wp-json/wp/v2/sang?per_page=100";
+    const urlNye = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/podcasts?per_page=4";
+    const urlPop = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/podcasts?per_page=4";
+    const urlInstagram = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/podcasts?per_page=4";
+    const urlFacebook = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/podcasts?per_page=4";
 
 
     //Opretter variabler
@@ -98,9 +105,9 @@ get_header(); ?>
         console.log(nye);
         nye.forEach(ny => {
             let klon = temp.cloneNode(true).content;
-            klon.querySelector("img").src = ny.profilbillede.guid;
+            klon.querySelector("img").src = ny.billede.guid;
             klon.querySelector(".titel").textContent = ny.title.rendered;
-            klon.querySelector(".album").innerHTML = ny.album;
+            klon.querySelector(".short_description").innerHTML = ny.kort_beskriv;
             secNye.appendChild(klon);
         });
     }
@@ -109,9 +116,9 @@ get_header(); ?>
         console.log(populaere);
         populaere.forEach(pop => {
             let klon = temp.cloneNode(true).content;
-            klon.querySelector("img").src = pop.profilbillede.guid;
+            klon.querySelector("img").src = pop.billede.guid;
             klon.querySelector(".titel").textContent = pop.title.rendered;
-            klon.querySelector(".album").innerHTML = pop.album;
+            klon.querySelector(".short_description").innerHTML = pop.kort_beskriv;
             secPop.appendChild(klon);
         })
     }
@@ -120,9 +127,9 @@ get_header(); ?>
         console.log(instagram);
         instagram.forEach(insta => {
             let klon = temp.cloneNode(true).content;
-            klon.querySelector("img").src = insta.profilbillede.guid;
+            klon.querySelector("img").src = insta.billede.guid;
             klon.querySelector(".titel").textContent = insta.title.rendered;
-            klon.querySelector(".album").innerHTML = insta.album;
+            klon.querySelector(".short_description").innerHTML = insta.kort_beskriv;
             secInsta.appendChild(klon);
         })
     }
@@ -131,9 +138,9 @@ get_header(); ?>
         console.log(facebook);
         facebook.forEach(face => {
             let klon = temp.cloneNode(true).content;
-            klon.querySelector("img").src = face.profilbillede.guid;
+            klon.querySelector("img").src = face.billede.guid;
             klon.querySelector(".titel").textContent = face.title.rendered;
-            klon.querySelector(".album").innerHTML = face.album;
+            klon.querySelector(".short_description").innerHTML = face.kort_beskriv;
             secFace.appendChild(klon);
         })
     }

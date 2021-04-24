@@ -25,7 +25,7 @@ get_header(); ?>
         <a href="">
             <img src="" alt="">
             <div>
-                <h2 class="hidden"></h2>
+                <h2 class></h2>
                 <p class="short_description"></p>
             </div>
         </a>

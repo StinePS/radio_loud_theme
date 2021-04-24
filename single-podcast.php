@@ -47,7 +47,7 @@ get_header(); ?>
 
             const dbUrl = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/podcasts/" + chosenPodcast;
             const episodeUrl = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/episoder?per_page=100";
-            const container = document.querySelector("#episoder");
+            const container = document.querySelector("#episodes");
 
             async function getJson() {
                 const data = await fetch(dbUrl);
@@ -61,9 +61,34 @@ get_header(); ?>
                 showEpisodes();
             }
 
-            showPodcasts() {
+            function showPodcasts() {
                 console.log("showPodcasts");
+                console.log(podcast.title.rendered);
+                document.querySelector("h1").innerHTML = podcast.title.rendered;
+                document.querySelector(".podcast_description").innerHTML = podcast.content.rendered;
             }
+
+            function showEpisodes() {
+                let temp = document.querySelector("template");
+                episoder.forEach(episode => {
+                    console.log("Loop ID :", chosenPodcast);
+                    if (episode.hoerer_til_podcast == chosenPodcast) {
+                        console.log("Loop kører ID :", chosenPodcast);
+                        let clone = temp.cloneNode(true).content;
+                        clone.querySelector("h2").textContent = epsiode.content.rendered;
+                        clone.querySelector(".episode_description").innerHTML = epsiode.content.rendered;
+                        clone.querySelector("article").addEventListener("click", () => {
+                            location.href = episode.link;
+                        })
+
+                        clone.querySelector("a").href = epside.link;
+                        console.log("eipsode", episode.link);
+                        container.appendChild(clone);
+                    }
+                })
+            }
+
+            getJson();
 
         </script>
 </section><!-- #primary -->

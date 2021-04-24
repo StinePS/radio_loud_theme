@@ -20,6 +20,7 @@ get_header(); ?>
                 <div class="blue">d</div>
             </h1>
         </div>
+
         <section id="karrusel">
             <div id="h2kar">
                 <h2>Lær at tage billeder i gråtoner</h2>
@@ -39,13 +40,11 @@ get_header(); ?>
             </div>
         </section>
 
-
         <section>
             <h3>Instagram</h3>
             <div id="insta" class="post_wrapper">
             </div>
         </section>
-
 
         <section>
             <h3>Facebook</h3>
@@ -67,10 +66,10 @@ get_header(); ?>
 
 <script>
     //Opretter konstanter for rest api
-    const urlNye = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/podcasts?per_page=4";
-    const urlPop = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/podcasts?per_page=4";
-    const urlInstagram = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/podcasts?per_page=4";
-    const urlFacebook = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/podcasts?per_page=4";
+    const urlNye = "http://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/ny?per_page=4";
+    const urlPop = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/pop?per_page=4";
+    const urlInstagram = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/insta?per_page=4";
+    const urlFacebook = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/face?per_page=4";
 
 
     //Opretter variabler

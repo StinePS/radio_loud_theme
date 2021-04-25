@@ -19,21 +19,6 @@ get_header(); ?>
         <h1 class="entry-title">Loud <span class="red">L</span><span class="pink">a</span><span class="blue">b</span></h1>
             </header>
 
-            <?php // Start the Loop.
-// Start the Loop.
-?>while (have_posts()):
-                the_post();
-
-                get_template_part('template-parts/content/content', 'page');
-
-                // If comments are open or we have at least one comment, load up the comment template.
-                if (comments_open() || get_comments_number()) {
-                    comments_template();
-                }
-            endwhile;
-// End the loop.
-?>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

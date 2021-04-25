@@ -102,7 +102,7 @@ if (filter == "alle" || podcast.kategori.includes(filter)) {
     clone.querySelector("img").src = podcast.billede.guid;
     clone.querySelector("h2").innerHTML = podcast.title.rendered;
     clone.querySelector(".short_description").innerHTML = podcast.kort_beskriv;
-    clone.querySelector("a").href= podcast.link.href;
+    clone.querySelector("a").href= podcast.link;
     container.appendChild(clone);
 }
     })

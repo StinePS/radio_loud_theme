@@ -60,7 +60,7 @@ async function getJson() {
 
 function generateButtons() {
     categories.forEach(category => {
-        document.querySelector("#podcast_filter".innerHTML += `<button class="filter" data-podcast="$category.id">${category.name}</button>`)
+        document.querySelector("#podcast_filter".innerHTML += `<button class="filter" data-podcast="$category.id">${kategori.name}</button>`)
     })
 
 buttonListener();

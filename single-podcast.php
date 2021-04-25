@@ -66,7 +66,7 @@ get_header(); ?>
                 console.log(podcast.title.rendered);
                 document.querySelector("h1").innerHTML = podcast.title.rendered;
                 document.querySelector(".podcast_description").innerHTML = podcast.lang_beskriv;
-                document.querySelector(".pod_pic"). = podcast.billede;
+                document.querySelector(".pod_pic").src = podcast.billede.guid;
             }
 
             function showEpisodes() {

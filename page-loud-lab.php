@@ -35,8 +35,8 @@ get_header(); ?>
             <h3>Krav?</h3>
             <p> Det kræver ingen specielle forudsætninger at være med. Faktisk er 
             det eneste krav, at du er mellem 15 og 32 år og har lyst til at være med til at udvikle vores podcasts og events.</p>
-            <p> For at komme med på LOUD LAB skal du skrive til 
-            mailto:lab@radioloud.dk og kort fortælle, hvem du er, og hvorfor du har lyst til at være med.</p>
+            <p> For at komme med på LOUD LAB skal du skrive til <a href="mailto:lab@radioloud.dk">lab@radioloud.dk</a>
+             og kort fortælle, hvem du er, og hvorfor du har lyst til at være med.</p>
         </section>
             
         <section>

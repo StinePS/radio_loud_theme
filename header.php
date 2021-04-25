@@ -37,10 +37,10 @@
 				<button id="button_loud_live">LOUD Live</button>
 			</div>
 			<div class="header_container2">
-			 <a href="https://stineplejdrup.dk/kea/09_cms/radio_loud/podcasts/">Podcasts</a>
-			 <a href="https://stineplejdrup.dk/kea/09_cms/radio_loud/sendeplan">Sendeplan</a>
-			 <a href="https://stineplejdrup.dk/kea/09_cms/radio_loud/loud-lab">LOUD LAB</a>
-			 <a href="https://stineplejdrup.dk/kea/09_cms/radio_loud/om-os">Om os</a>
+			 <a href="/kea/09_cms/radio_loud/podcasts/">Podcasts</a>
+			 <a href="/kea/09_cms/radio_loud/sendeplan">Sendeplan</a>
+			 <a href="/kea/09_cms/radio_loud/loud-lab">LOUD LAB</a>
+			 <a href="/kea/09_cms/radio_loud/om-os">Om os</a>
 			</div>
 		</header><!-- #masthead -->
 

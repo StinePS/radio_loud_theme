@@ -53,7 +53,10 @@ async function getJson() {
     const catData = await fetch(catUrl);
     podcasts = await data.json();
     categories = await catData.json();
-    console.log(categories);
+    let kategorier = new Set()
+    podcasts.forEach(podcast => kategorier.add(podcast.kategori[0]))
+    
+    console.log(kategorier);
     showPodcasts();
     generateButtons();
 }

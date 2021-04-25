@@ -67,13 +67,12 @@ function generateButtons() {
         if (category) {
         document.querySelector("#podcast_filter").innerHTML += `<button class="filter" data-podcasts="${category}">${category}</button>`
     }})
-
-buttonListener();
+    buttonListener();
 }
 
 function buttonListener() {
-    document.querySelectorAll("#podcast_filter button").forEach(knap => {
-        knap.addEventlistener("click", filtrering);
+    document.querySelectorAll("#podcast_filter button").forEach(button => {
+        button.addEventlistener("click", filtrering);
     })
 }
 

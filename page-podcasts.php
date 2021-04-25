@@ -72,7 +72,7 @@ function generateButtons() {
 
 function buttonListener() {
     document.querySelectorAll("#podcast_filter button").forEach(button => {
-        button.addEventlistener("click", filtrering);
+        button.addEventListener("click", filtrering);
     })
 }
 

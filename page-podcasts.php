@@ -43,28 +43,27 @@ get_header(); ?>
 
 <script>
 let podcasts;
-let categories;
+let categories = new Set();
 let filterPodcast = "alle";
 const dbUrl = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/podcasts?per_page=100";
-const catUrl = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/categories?per_page=100";
+
 
 async function getJson() {
     const data = await fetch(dbUrl);
-    const catData = await fetch(catUrl);
     podcasts = await data.json();
-    categories = await catData.json();
-    let kategorier = new Set()
-    podcasts.forEach(podcast => kategorier.add(podcast.kategori[0]))
-    
-    console.log(kategorier);
+    podcasts.forEach(podcast => {
+        podcast.kategori.forEach(category => {categories.add(category)})
+    })
+    console.log(categories);
     showPodcasts();
     generateButtons();
 }
 
 function generateButtons() {
     categories.forEach(category => {
-        document.querySelector("#podcast_filter".innerHTML += `<button class="filter" data-podcast="$kategori.id">${podcast.kategori}</button>`)
-    })
+        if (category) {
+        document.querySelector("#podcast_filter").innerHTML += `<button class="filter" data-podcast="${category}">${category}</button>`
+    }})
 
 buttonListener();
 }
@@ -86,7 +85,8 @@ function showPodcasts() {
     let container = document.querySelector("#podcast_gallery");
     container.innerHTML = "";
     podcasts.forEach(podcast => {
-if (filterPodcast == "alle" || podcast.categories.includes(parseInt(filterPodcast))) {
+if (filterPodcast == "alle" || podcast.kategori.includes(filterPodcast)) {
+
     let clone = temp.cloneNode(true).content;
     clone.querySelector("img").src = podcast.billede.guid;
     clone.querySelector("h2").innerHTML = podcast.title.rendered;
@@ -94,7 +94,6 @@ if (filterPodcast == "alle" || podcast.categories.includes(parseInt(filterPodcas
     clone.querySelector("a").href= podcast.link.href;
     container.appendChild(clone);
 }
-
     })
 }
 

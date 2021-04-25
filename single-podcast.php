@@ -81,7 +81,7 @@ get_header(); ?>
                             location.href = episode.link;
                         })
 
-                        clone.querySelector("a").href = epside.link;
+                        clone.querySelector("a").href = episode.link;
                         console.log("eipsode", episode.link);
                         container.appendChild(clone);
                     }

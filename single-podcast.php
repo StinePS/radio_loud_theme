@@ -20,7 +20,7 @@ get_header(); ?>
                 <p class="podcast_description"></p>
             </div>
             <div>
-                <img src="" alt="">
+                <img class="pod_pic" src="" alt="">
             </div>
         </article>
 
@@ -66,6 +66,7 @@ get_header(); ?>
                 console.log(podcast.title.rendered);
                 document.querySelector("h1").innerHTML = podcast.title.rendered;
                 document.querySelector(".podcast_description").innerHTML = podcast.lang_beskriv;
+                document.querySelector(".pod_pic"). = podcast.billede;
             }
 
             function showEpisodes() {

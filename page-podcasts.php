@@ -37,6 +37,7 @@ get_header(); ?>
         <nav id="podcast_filter">
             <button data-podcasts="alle">Alle</button>
         </nav>
+        <h3 class="filter_name"></h3>
         <section id="podcast_gallery">
         </section>
     </main>
@@ -44,7 +45,7 @@ get_header(); ?>
 <script>
 let podcasts;
 let categories = new Set();
-let filterPodcast = "alle";
+let filter = "alle";
 const dbUrl = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/podcasts?per_page=100";
 
 
@@ -63,7 +64,7 @@ async function getJson() {
 function generateButtons() {
     categories.forEach(category => {
         if (category) {
-        document.querySelector("#podcast_filter").innerHTML += `<button class="filter" data-podcast="${category}">${category}</button>`
+        document.querySelector("#podcast_filter").innerHTML += `<button class="filter" data-podcasts="${category}">${category}</button>`
     }})
 
 buttonListener();
@@ -76,9 +77,17 @@ function buttonListener() {
 }
 
 function filtrering() {
-    filterPodcast = this.dataset.podcasts;
-    console.log(filterPodcast)
-    showPodcasts();
+    console.log("filtrering")
+    //sæt variablen "filter" til værdien af data-podcasts på den klikkede knap
+    filter = this.dataset.podcasts;
+    //fjern class "selected" fra klikket knap
+	document.querySelector(".selected").classList.remove("selected");
+	//tilføj class "selected" til klikket knap
+	this.classList.add("selected")
+	//kald funktion showPodcasts efter indstilling af nyt filter
+	const h3 = document.querySelector(".filter_name");
+    showPodcasts(filter);
+    h3.textContent = this.textContent;
 }
 
 function showPodcasts() {
@@ -86,7 +95,7 @@ function showPodcasts() {
     let container = document.querySelector("#podcast_gallery");
     container.innerHTML = "";
     podcasts.forEach(podcast => {
-if (filterPodcast == "alle" || podcast.kategori.includes(filterPodcast)) {
+if (filter == "alle" || podcast.kategori.includes(filter)) {
 
     let clone = temp.cloneNode(true).content;
     clone.querySelector("img").src = podcast.billede.guid;

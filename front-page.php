@@ -15,9 +15,7 @@ get_header(); ?>
     <main id="frontpage_main" class="site-main">
 
         <div class="overskrift">
-            <h1>Radio L<div class="red">o</div>
-                <div class="pink">u</div>
-                <div class="blue">d</div>
+            <h1>Radio L<span class="red">o</span><span class="pink">u</span><span class="blue">d</span>
             </h1>
         </div>
 
@@ -66,10 +64,10 @@ get_header(); ?>
 
 <script>
     //Opretter konstanter for rest api
-    const urlNye = "http://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/ny?per_page=4";
-    const urlPop = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/pop?per_page=4";
-    const urlInstagram = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/insta?per_page=4";
-    const urlFacebook = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/face?per_page=4";
+    const urlNye = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/ny";
+    const urlPop = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/pop";
+    const urlInstagram = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/insta";
+    const urlFacebook = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/face";
 
 
     //Opretter variabler

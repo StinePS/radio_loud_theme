@@ -17,7 +17,7 @@ get_header(); ?>
 <!-- Vores kode -->
 
         <div class="overskrift">
-            <h1>Podc<div class="red">a</div><div class="pink">s</div><div class="blue">t</div></h1>
+            <h1>Podc<span class="red">a</span><span class="pink">s</span><span class="blue">t</span></h1>
         </div>
 
 <template>
@@ -25,7 +25,7 @@ get_header(); ?>
         <a href="">
             <img src="" alt="">
             <div>
-                <h2 class></h2>
+                <h2 class="hidden"></h2>
                 <p class="short_description"></p>
             </div>
         </a>
@@ -87,7 +87,7 @@ if (filterPodcast == "alle" || podcast.categories.includes(parseInt(filterPodcas
     let clone = temp.cloneNode(true).content;
     clone.querySelector("img").src = podcast.billede.guid;
     clone.querySelector("h2").innerHTML = podcast.title.rendered;
-    clone.querySelector(".short_description").innerHTML = podcast.kort_beskriv.rendered;
+    clone.querySelector(".short_description").innerHTML = podcast.kort_beskriv;
     clone.querySelector("a").href= podcast.link.href;
     container.appendChild(clone);
 }

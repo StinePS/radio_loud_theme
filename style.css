@@ -110,13 +110,22 @@ a {
   font-weight: 400;
 }
 
+a:active {
+}
+
+a:hover {
+}
+
+a:visited {
+}
+
 button {
 }
 
-button:hover {
+button:active {
 }
 
-button:selected {
+button:hover {
 }
 
 .selected {
@@ -226,7 +235,7 @@ button:selected {
 }
 
 footer p {
-  color: #ffffff;
+  color: #fff;
   font-size: 0.8rem;
   line-height: 1;
   margin: 0;
@@ -236,6 +245,18 @@ footer a {
   color: #fff;
   font-size: 0.8rem;
   line-height: 1;
+}
+
+footer a:active {
+  color: #8a0a28;
+}
+
+footer a:hover {
+  color: #8a0a28;
+}
+
+footer a:visited {
+  color: #fff;
 }
 
 /* ------------------------------------------ */

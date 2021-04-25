@@ -45,6 +45,7 @@ get_header(); ?>
 let podcasts;
 let categories = new Set();
 let filterPodcast = "alle";
+let knap;
 const dbUrl = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/podcasts?per_page=100";
 
 

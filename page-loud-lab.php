@@ -19,9 +19,9 @@ get_header(); ?>
         </header>
 
         <h2>Du skaber LOUD</h2>
+        <section class="p_text">
         <p> LAB er for dig, der gerne vil være med til at forme LOUD. <br>
-            LOUD skal være et medie for alle unge, og derfor er det vigtigt, at alle er repræsenteret i LAB:
-            erhvervsskoleelever, universitetsstuderende, de jobsøgende, de stille, de larmende, de aktive, sofaflyderne.</p>
+            LOUD skal være et medie for alle unge, og derfor er det vigtigt, at alle er repræsenteret i LAB: erhvervsskoleelever, universitetsstuderende, de jobsøgende, de stille, de larmende, de aktive, sofaflyderne.</p>
         <p> Vi holder LOUD LAB én gang om måneden i hele Danmark, og her kan du 
             sammen med andre unge fra hele landet være med til at udvikle nye podcasts, prøve kræfter med at producere lyd, og du kan pitche dine podcastidéer.</p>
         <p> Det kræver ingen specielle forudsætninger at være med. Faktisk er 
@@ -30,7 +30,7 @@ get_header(); ?>
             mailto:lab@radioloud.dk og kort fortælle, hvem du er, og hvorfor du har lyst til at være med.</p>
         <p> PÅ GRUND AF CORONARESTRIKTIONERNE KAN VI FOR ØJEBLIKKET IKKE 
             AFHOLDE LOUD LAB. DU KAN DOG STADIG GODT TILMELDE DIG, SÅ DU KAN FÅ INFORMATION OM, HVORNÅR VI IGEN SAMLES FOR AT UDVIKLE LOUD.</p>
-
+        </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

@@ -20,15 +20,28 @@ get_header(); ?>
 
         <h2>Du skaber LOUD</h2>
         <section>
-        <p class="p_text"> LAB er for dig, der gerne vil være med til at forme LOUD. <br>
+            <h3>Hvad er LOUD Lab?</h3>
+            <p> LAB er for dig, der gerne vil være med til at forme LOUD. <br>
             LOUD skal være et medie for alle unge, og derfor er det vigtigt, at alle er repræsenteret i LAB: erhvervsskoleelever, universitetsstuderende, de jobsøgende, de stille, de larmende, de aktive, sofaflyderne.</p>
-        <p class="p_text"> Vi holder LOUD LAB én gang om måneden i hele Danmark, og her kan du 
+        </section>
+            
+        <section>
+            <h3>Hvor ofte er der LAB?</h3>
+            <p> Vi holder LOUD LAB én gang om måneden i hele Danmark, og her kan du 
             sammen med andre unge fra hele landet være med til at udvikle nye podcasts, prøve kræfter med at producere lyd, og du kan pitche dine podcastidéer.</p>
-        <p class="p_text"> Det kræver ingen specielle forudsætninger at være med. Faktisk er 
+        </section>
+            
+        <section>
+            <h3>Krav?</h3>
+            <p> Det kræver ingen specielle forudsætninger at være med. Faktisk er 
             det eneste krav, at du er mellem 15 og 32 år og har lyst til at være med til at udvikle vores podcasts og events.</p>
-        <p class="p_text"> For at komme med på LOUD LAB skal du skrive til 
+            <p> For at komme med på LOUD LAB skal du skrive til 
             mailto:lab@radioloud.dk og kort fortælle, hvem du er, og hvorfor du har lyst til at være med.</p>
-        <p class="p_text"> PÅ GRUND AF CORONARESTRIKTIONERNE KAN VI FOR ØJEBLIKKET IKKE 
+        </section>
+            
+        <section>
+            <h3>COVID-19</h3>
+            <p> PÅ GRUND AF CORONARESTRIKTIONERNE KAN VI FOR ØJEBLIKKET IKKE 
             AFHOLDE LOUD LAB. DU KAN DOG STADIG GODT TILMELDE DIG, SÅ DU KAN FÅ INFORMATION OM, HVORNÅR VI IGEN SAMLES FOR AT UDVIKLE LOUD.</p>
         </section>
 		</main><!-- #main -->

@@ -35,7 +35,7 @@ get_header(); ?>
 <section id="podcast_main">
     <main>
         <nav id="podcast_filter">
-            <button data-podcasts="alle">Alle</button>
+            <button data-podcasts="alle" class="selected">Alle</button>
         </nav>
         <h3 class="filter_name"></h3>
         <section id="podcast_gallery">

@@ -52,8 +52,9 @@ async function getJson() {
     const data = await fetch(dbUrl);
     podcasts = await data.json();
     podcasts.forEach(podcast => {
-        podcast.kategori.forEach(category => {categories.add(category)})
-    })
+        if (podcast.kategori) 
+        {podcast.kategori.forEach(category => {categories.add(category)})
+    }})
     console.log(categories);
     showPodcasts();
     generateButtons();

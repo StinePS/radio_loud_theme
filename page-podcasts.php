@@ -45,7 +45,8 @@ get_header(); ?>
 <script>
 let podcasts;
 let categories = new Set();
-let filter = "alle";
+let filter = "alle"; //filter er fra start "alle"
+let sort; //variabel til sortering
 const dbUrl = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/podcasts?per_page=100";
 
 
@@ -90,13 +91,14 @@ function filtrering() {
     h3.textContent = this.textContent;
 }
 
-function showPodcasts() {
-    let temp = document.querySelector("template");
+//funktion der viser podcasts i liste-view
+function showPodcasts(sort) {
+    console.log("showPodcasts");
     let container = document.querySelector("#podcast_gallery");
     container.innerHTML = "";
     podcasts.forEach(podcast => {
 if (filter == "alle" || podcast.kategori.includes(filter)) {
-
+    let temp = document.querySelector("template");
     let clone = temp.cloneNode(true).content;
     clone.querySelector("img").src = podcast.billede.guid;
     clone.querySelector("h2").innerHTML = podcast.title.rendered;

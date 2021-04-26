@@ -253,7 +253,7 @@ button:hover {
 }
 
 .hent-app {
-  max-width: 150px;
+  max-width: 125px;
 }
 
 footer p {
@@ -314,6 +314,12 @@ footer a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, 250px);
   grid-gap: 1rem;
+}
+
+/* ------------------------------------------ */
+/* PODCAST SINGLE VIEW */
+.entry-meta {
+  display: none;
 }
 
 /* ------------------------------------------ */

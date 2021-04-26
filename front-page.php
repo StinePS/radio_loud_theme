@@ -57,7 +57,7 @@ get_header(); ?>
     <article>
         <img src="" alt="" id="">
         <h4 class="titel hidden"></h4>
-        <!-- <p class="short_description"></p> -->
+            <p class="short_description"></p>
     </article>
 </template>
 
@@ -131,7 +131,7 @@ get_header(); ?>
             let klon = temp.cloneNode(true).content;
             klon.querySelector("img").src = insta.billede.guid;
             klon.querySelector(".titel").textContent = insta.title.rendered;
-            /* klon.querySelector(".short_description").innerHTML = insta.kort_beskriv; */
+                klon.querySelector(".short_description").innerHTML = insta.kort_beskriv;
             secInsta.appendChild(klon);
         })
     }
@@ -142,7 +142,7 @@ get_header(); ?>
             let klon = temp.cloneNode(true).content;
             klon.querySelector("img").src = face.billede.guid;
             klon.querySelector(".titel").textContent = face.title.rendered;
-            /* klon.querySelector(".short_description").innerHTML = face.kort_beskriv; */
+                klon.querySelector(".short_description").innerHTML = face.kort_beskriv;
             secFace.appendChild(klon);
         })
     }

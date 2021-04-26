@@ -157,9 +157,16 @@ button:hover {
   display: inline;
 }
 
-/* Skjulte overskrifter */
+/* ------------------------------------------ */
+/* SKJULT INDHOLD */
 .hidden {
   display: none;
+}
+
+@media (max-width: 767px) {
+  .hidden_on_mobile {
+    display: none;
+  }
 }
 
 /* ------------------------------------------ */

@@ -252,6 +252,10 @@ button:hover {
   text-transform: uppercase;
 }
 
+.hent-app {
+  max-width: 150px;
+}
+
 footer p {
   color: #fff;
   font-size: 0.8rem;

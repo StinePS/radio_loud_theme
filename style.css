@@ -16,11 +16,6 @@ img {
   width: 100%;
 }
 
-.h-2 {
-  height: 2rem;
-  display: inline;
-}
-
 h1:not(.site-title)::before,
 h2::before {
   background: #767676;
@@ -141,6 +136,18 @@ button:hover {
 .selected {
   background-color: #000;
   color: #fff;
+}
+
+/* CLASSES */
+.apple,
+.spotify,
+.google,
+.loud {
+  display: inline;
+}
+
+.h-2 {
+  height: 2rem;
 }
 
 /* Farvede H1-bogstaver */
@@ -304,12 +311,10 @@ footer a:hover {
 #pop,
 #insta,
 #face {
-  /*    background-color: whitesmoke;*/
   margin-top: -20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
-  /*    text-align: center;*/
 }
 
 /* ------------------------------------------ */

@@ -144,6 +144,7 @@ button:hover {
 .google,
 .loud {
   display: inline;
+  margin: 0 auto;
 }
 
 .wh-2 {

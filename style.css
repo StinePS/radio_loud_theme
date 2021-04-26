@@ -41,6 +41,10 @@ article {
   padding: 0.2rem;
 }
 
+article a {
+  color: #000;
+}
+
 h1 {
   font-family: 'Gugi', cursive;
   text-transform: uppercase;
@@ -75,6 +79,7 @@ p {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.3;
+  margin: 0.1rem 0;
 }
 
 .p_text {

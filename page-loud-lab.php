@@ -44,6 +44,7 @@ get_header(); ?>
             <p> PÅ GRUND AF CORONARESTRIKTIONERNE KAN VI FOR ØJEBLIKKET IKKE 
             AFHOLDE LOUD LAB. DU KAN DOG STADIG GODT TILMELDE DIG, SÅ DU KAN FÅ INFORMATION OM, HVORNÅR VI IGEN SAMLES FOR AT UDVIKLE LOUD.</p>
         </section>
+        
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

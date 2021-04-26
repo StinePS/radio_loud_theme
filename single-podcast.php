@@ -11,7 +11,7 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
         <article class="single_view grid-2">
@@ -92,6 +92,6 @@ get_header(); ?>
             getJson();
 
         </script>
-</section><!-- #primary -->
+</div><!-- #primary -->
 
 <?php get_footer();

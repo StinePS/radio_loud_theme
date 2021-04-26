@@ -11,7 +11,15 @@
 
 get_header(); ?>
 
-let chosenEpisode = <?php echo get_the_ID(); ?>;
-console.log(chosenEpisode);
+<div id="primary" class="content-area">
+		<main id="main" class="site-main">
+
+        let chosenEpisode = <?php echo get_the_ID(); ?>;
+        console.log(chosenEpisode);
+
+        </main><!-- #main -->
+</div><!-- #primary -->
+
+
 
 <?php get_footer();

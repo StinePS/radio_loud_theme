@@ -11,6 +11,9 @@
 
 get_header(); ?>
 
+<div id="primary" class="content-area">
+		<main id="main" class="site-main">
+
 <div class="overskrift">
     <h1>Praktikant hos L<span class="red">o</span><span class="pink">u</span><span class="blue">d</span>
     </h1>
@@ -55,4 +58,7 @@ get_header(); ?>
         Praktikantvejleder (København) Camilla Michelle Mikkelsen:  <a href="mailto:camillamichelle@radioloud.dk">camillamichelle@radioloud.dk</a>
         </p>
     </section>
+
+    </main><!-- #main -->
+</div><!-- #primary -->
 <?php get_footer();

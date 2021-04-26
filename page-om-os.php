@@ -42,17 +42,6 @@ get_header(); ?>
             Mener du, at LOUD har behandlet dig uretfærdigt som medie, så kan du klage til Pressenævnet. Pressenævnets opgave er at behandle klager over pressen.</p>
         </section>
 
-  
-
-
-
-
-
-
-
-
-
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

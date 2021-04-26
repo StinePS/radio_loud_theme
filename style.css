@@ -16,6 +16,11 @@ img {
   width: 100%;
 }
 
+.h-2 {
+  height: 2rem;
+  display: inline;
+}
+
 h1:not(.site-title)::before,
 h2::before {
   background: #767676;

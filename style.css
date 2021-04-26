@@ -146,7 +146,8 @@ button:hover {
   display: inline;
 }
 
-.h-2 {
+.wh-2 {
+  width: 2rem;
   height: 2rem;
 }
 

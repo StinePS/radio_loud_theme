@@ -18,10 +18,11 @@ get_header(); ?>
             <div>
                 <h1 class="single_overskrift"></h1>
                 <p class="podcast_description"></p>
-                <a class="apple" href=""><img class="wh-2" src="https://loud.land/wp-content/themes/radioloud/dist/images/apple-podcast_2f6140b7.svg" alt="Apple podcast logo"></a>
+                <div class="app_knapper"><a class="apple" href=""><img class="wh-2" src="https://loud.land/wp-content/themes/radioloud/dist/images/apple-podcast_2f6140b7.svg" alt="Apple podcast logo"></a>
                 <a class="spotify" href=""><img class="wh-2" src="https://loud.land/wp-content/themes/radioloud/dist/images/spotify_977b3a3c.svg" alt="Spotify logo"></a>
                 <a class="google" href=""><img class="wh-2" src="https://loud.land/wp-content/themes/radioloud/dist/images/google-podcast_27468af1.svg" alt="Google podcast logo"></a>
                 <a class="loud" href="#"><img class="wh-2" src="https://stineplejdrup.dk/kea/09_cms/radio_loud/loud_logo.svg" alt="Radio Loud logo"></a>
+                </div>
             </div>
             <div>
                 <img class="pod_pic" src="" alt="">

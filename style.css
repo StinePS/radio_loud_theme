@@ -139,12 +139,15 @@ button:hover {
 }
 
 /* CLASSES */
+.app_knapper {
+  margin: 0 auto;
+}
+
 .apple,
 .spotify,
 .google,
 .loud {
   display: inline;
-  margin: 0 auto;
 }
 
 .wh-2 {

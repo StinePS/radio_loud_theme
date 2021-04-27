@@ -21,7 +21,7 @@ get_header(); ?>
 
     <section>
         <h2>Information og pressebilleder</h2>
-        <p>Kontakt os venligst på<a href="mailto:presse@radioloud.dk">presse@radioloud.dk</a></p>
+        <p>Kontakt os venligst på <a href="mailto:presse@radioloud.dk">presse@radioloud.dk</a></p>
         </section>
             
         <section>
@@ -29,11 +29,6 @@ get_header(); ?>
             <p>Hent <a href="#">LOUDs logopakke</a></p>
         </section>
                     
-        <section>
-            <h3>LOUD pressemeddelelser</h3> 
-            <p>Du finder LOUDs pressemeddelelser på <a href="ritzau.dk/nyhedsrum/radio-loud">ritzau.dk/nyhedsrum/radio-loud</a></p>
-        </section>
-
         <section>
             <h3>LOUD pressemeddelelser</h3> 
             <p>Du finder LOUDs pressemeddelelser på <a href="ritzau.dk/nyhedsrum/radio-loud">ritzau.dk/nyhedsrum/radio-loud</a></p>

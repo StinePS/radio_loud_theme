@@ -34,7 +34,6 @@ get_header(); ?>
                 <article>
                     <img class="epi_pic" src="" alt="">
                     <h2 class=episode_overskrift></h2>
-                    <p class="episode_description"></p>
                 </article>
             </template>
         </section>
@@ -82,7 +81,6 @@ get_header(); ?>
                         let clone = temp.cloneNode(true).content;
                         clone.querySelector(".epi_pic").src = episode.billede.guid;
                         clone.querySelector("h2").textContent = episode.title.rendered;
-                        clone.querySelector(".episode_description").innerHTML = episode.content.rendered;
                         clone.querySelector("article").addEventListener("click", () => {
                             location.href = episode.link;
                         })

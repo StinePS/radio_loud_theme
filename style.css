@@ -162,16 +162,12 @@ button:hover {
 }
 
 /* Podcast single view - Episoder */
-.epi_pic img {
+.epi_pic {
   position: relative;
 }
 
-.episode_overskrift h2 {
+.episode_overskrift {
   font-size: 1.25rem;
-  position: absolute;
-}
-
-episode_description p {
   position: absolute;
 }
 

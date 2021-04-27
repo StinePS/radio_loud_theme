@@ -29,7 +29,7 @@ get_header(); ?>
             </div>
         </article>
 
-        <section id="episodes" class="grid-4">
+        <section id="episodes">
             <template>
                 <article>
                     <img src="" alt="">

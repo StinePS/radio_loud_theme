@@ -23,7 +23,7 @@
 			<p class="footer-header">Hent app'en</p>
 			<div class="hent-app">
 				<a href="https://apps.apple.com/dk/app/radio-loud/id1498746367?l=da"><img src="https://stineplejdrup.dk/kea/09_cms/appstore.svg" alt="App Store-logo"></a>
-				<a href="https://play.google.com/store/apps/details?id=dk.uptime.RadioLoud"><img src="https://stineplejdrup.dk/kea/09_cms/googleplay.png" alt="Google Play-logo"></a>
+				<a href="https://play.google.com/store/apps/details?id=dk.uptime.RadioLoud"><img src="https://stineplejdrup.dk/kea/09_cms/googleplay.svg" alt="Google Play-logo"></a>
 			</div>
 		</div>
 		<div class="footer-column">

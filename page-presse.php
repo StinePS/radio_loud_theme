@@ -17,7 +17,27 @@ get_header(); ?>
     <div class="overskrift">
     <h1>Pre<span class="red">s</span><span class="pink">s</span><span class="blue">e</span>
     </h1>
-</div>
+    </div>
+
+    <section>
+        <h2>Information og pressebilleder</h2>
+        <p>Kontakt os venligst på<a href="mailto:presse@radioloud.dk">presse@radioloud.dk</a></p>
+        </section>
+            
+        <section>
+            <h3>Logopakke</h3> 
+            <p>Hent <a href="#">LOUDs logopakke</a></p>
+        </section>
+                    
+        <section>
+            <h3>LOUD pressemeddelelser</h3> 
+            <p>Du finder LOUDs pressemeddelelser på <a href="ritzau.dk/nyhedsrum/radio-loud">ritzau.dk/nyhedsrum/radio-loud</a></p>
+        </section>
+
+        <section>
+            <h3>LOUD pressemeddelelser</h3> 
+            <p>Du finder LOUDs pressemeddelelser på <a href="ritzau.dk/nyhedsrum/radio-loud">ritzau.dk/nyhedsrum/radio-loud</a></p>
+        </section>
 
     </main><!-- #main -->
 </section><!-- #primary -->

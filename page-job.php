@@ -12,8 +12,22 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
-		<main id="main" class="site-main">
+	<main id="main" class="site-main">
 
-        </main><!-- #main -->
-</div><!-- #primary -->
+    <div class="overskrift">
+    <h1><span class="red">J</span><span class="pink">o</span><span class="blue">b</span>
+    </h1>
+    </div>
+
+    <section>
+            <h2>Vil du være en del af Radio LOUD?</h2>
+            <p>Du er meget velkommen til at sende en ansøgning til <a href="mailto:job@radioloud.dk">job@radioloud.dk</a></p>
+        </section>
+            
+        <section>
+            <h3>Ledige stillinger</h3>
+            <p>Vi har desværre ingen jobopslag netop nu.</p>
+        </section>
+    </main><!-- #main -->
+</section><!-- #primary -->
 <?php get_footer();

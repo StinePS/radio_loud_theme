@@ -40,14 +40,15 @@ get_header(); ?>
 
         <section>
             <h3>Instagram</h3>
-            <a href=""><div id="insta" class="post_wrapper"></a>
-            </div>
+            <a href=""><div id="insta" class="post_wrapper">
+            </div></a>
         </section>
 
         <section>
             <h3>Facebook</h3>
-            <a href="https://www.facebook.com/radiolouddanmark/"><div id="face" class="post_wrapper"></a>
-            </div>
+            <a href="https://www.facebook.com/radiolouddanmark/">
+            <div id="face" class="post_wrapper">
+            </div></a>
         </section>
 
     </main><!-- #main -->

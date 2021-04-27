@@ -63,9 +63,6 @@ h2 {
   font-size: 2rem;
 }
 
-.episode_overskrift h2 {
-}
-
 h3 {
   font-family: 'Baloo 2', sans-serif;
   font-weight: 400;
@@ -145,6 +142,7 @@ button:hover {
 }
 
 /* CLASSES */
+/* App-knapper */
 .app_knapper {
   text-align: center;
 }
@@ -161,6 +159,20 @@ button:hover {
   height: 2rem;
   margin-top: 1rem;
   margin-right: 1rem;
+}
+
+/* Podcast single view - Episoder */
+.epi_pic img {
+  position: relative;
+}
+
+.episode_overskrift h2 {
+  font-size: 1.25rem;
+  position: absolute;
+}
+
+episode_description p {
+  position: absolute;
 }
 
 /* Farvede H1-bogstaver */

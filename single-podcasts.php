@@ -78,20 +78,21 @@ get_header(); ?>
             }
 
             function showEpisodes() {
+                console.log("showEpisodes");
                 let temp = document.querySelector("template");
                 episoder.forEach(episode => {
                     console.log("Loop ID :", chosenPodcast);
                     if (episode.hoerer_til_podcast == chosenPodcast) {
                         console.log("Loop kører ID :", chosenPodcast);
                         let clone = temp.cloneNode(true).content;
-                        clone.querySelector("h2").textContent = epsiode.content.rendered;
-                        clone.querySelector(".episode_description").innerHTML = epsiode.content.rendered;
+                        clone.querySelector("h2").textContent = episode.title.rendered;
+                        clone.querySelector(".episode_description").innerHTML = episode.content.rendered;
                         clone.querySelector("article").addEventListener("click", () => {
                             location.href = episode.link;
                         })
 
                         clone.querySelector("a").href = episode.link;
-                        console.log("eipsode", episode.link);
+                        console.log("episode", episode.link);
                         container.appendChild(clone);
                     }
                 })

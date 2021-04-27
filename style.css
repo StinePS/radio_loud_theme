@@ -35,11 +35,11 @@ section {
   padding-top: 1rem;
 }
 
-article {
+/* article {
   border: 2px solid #000;
   border-radius: 0;
   padding: 0.4rem;
-}
+} */
 
 article a {
   color: #000;

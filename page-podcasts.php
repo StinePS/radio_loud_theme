@@ -26,7 +26,6 @@ get_header(); ?>
             <img src="" alt="">
             <div>
                 <h2 class="hidden"></h2>
-                <p class="short_description"></p>
             </div>
         </a>
     </article>
@@ -101,7 +100,6 @@ if (filter == "alle" || podcast.kategori.includes(filter)) {
     let clone = temp.cloneNode(true).content;
     clone.querySelector("img").src = podcast.billede.guid;
     clone.querySelector("h2").innerHTML = podcast.title.rendered;
-    clone.querySelector(".short_description").innerHTML = podcast.kort_beskriv;
     clone.querySelector("a").href= podcast.link;
     container.appendChild(clone);
 }

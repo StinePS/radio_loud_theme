@@ -163,12 +163,10 @@ button:hover {
 
 /* Podcast single view - Episoder */
 .epi_pic {
-  position: relative;
 }
 
 .episode_overskrift {
   font-size: 1.25rem;
-  position: absolute;
 }
 
 /* Farvede H1-bogstaver */

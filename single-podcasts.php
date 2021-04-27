@@ -32,11 +32,9 @@ get_header(); ?>
         <section id="episodes" class="grid-4">
             <template>
                 <article>
-                    <img src="" alt="">
-                    <div>
-                        <h2></h2>
-                        <p class="episode_description"></p>
-                    </div>
+                    <img class="epi_pic" src="" alt="">
+                    <h2 class=episode_overskrift></h2>
+                    <p class="episode_description"></p>
                 </article>
             </template>
         </section>
@@ -82,6 +80,7 @@ get_header(); ?>
                 episoder.forEach(episode => {
                     if (episode.hoerer_til_podcast == chosenPodcast) {
                         let clone = temp.cloneNode(true).content;
+                        clone.querySelector(".epi_pic").src = episode.billede.guid;
                         clone.querySelector("h2").textContent = episode.title.rendered;
                         clone.querySelector(".episode_description").innerHTML = episode.content.rendered;
                         clone.querySelector("article").addEventListener("click", () => {

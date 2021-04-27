@@ -89,8 +89,6 @@ get_header(); ?>
                         clone.querySelector("article").addEventListener("click", () => {
                             location.href = episode.link;
                         })
-
-                        clone.querySelector("a").href = episode.link;
                         console.log("episode", episode.link);
                         container.appendChild(clone);
                     }

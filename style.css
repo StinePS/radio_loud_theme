@@ -14,6 +14,7 @@ Author:      KEA 2. sem. Gruppe 2
 
 img {
   width: 100%;
+  vertical-align: middle;
 }
 
 /* h1:not(.site-title)::before,
@@ -37,7 +38,7 @@ section {
 article {
   border: 2px solid #000;
   border-radius: 0;
-  padding: 0.2rem;
+  padding: 0.4rem;
 }
 
 article a {
@@ -82,7 +83,7 @@ p {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.3;
-  margin: 0.1rem 0;
+  margin: 0.1rem 0 0 0;
 }
 
 .p_text {

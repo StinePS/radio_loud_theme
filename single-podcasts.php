@@ -16,7 +16,7 @@ get_header(); ?>
 
         <article class="single_view grid-2">
             <div>
-                <h1 class="single_overskrift"></h1>
+                <h1></h1>
                 <p class="podcast_description"></p>
                 <div class="app_knapper"><a class="apple" href=""><img class="wh-2" src="https://loud.land/wp-content/themes/radioloud/dist/images/apple-podcast_2f6140b7.svg" alt="Apple podcast logo"></a>
                 <a class="spotify" href=""><img class="wh-2" src="https://loud.land/wp-content/themes/radioloud/dist/images/spotify_977b3a3c.svg" alt="Spotify logo"></a>

@@ -14,6 +14,11 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 
+    <div class="overskrift">
+    <h1>Pre<span class="red">s</span><span class="pink">s</span><span class="blue">e</span>
+    </h1>
+</div>
+
     </main><!-- #main -->
 </section><!-- #primary -->
 

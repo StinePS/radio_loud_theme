@@ -16,7 +16,7 @@ img {
   width: 100%;
 }
 
-h1:not(.site-title)::before,
+/* h1:not(.site-title)::before,
 h2::before {
   background: #767676;
   content: '\020';
@@ -24,7 +24,6 @@ h2::before {
   /*   height: 2px;
     margin: 1rem 0;
     width: 1em;*/
-}
 
 main {
   max-width: 1200px;
@@ -46,10 +45,14 @@ article a {
 }
 
 h1 {
-  font-family: 'Gugi', cursive;
+  font-family: 'Baloo 2', cursive;
   text-transform: uppercase;
   text-align: center;
   font-size: 3rem;
+}
+
+.overskrift {
+  font-family: 'Gugi', cursive;
 }
 
 h2 {

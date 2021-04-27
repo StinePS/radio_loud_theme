@@ -14,9 +14,9 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-        <header class="entry-header">
-            <h1 class="entry-title">Loud <span class="red">L</span><span class="pink">a</span><span class="blue">b</span></h1>
-        </header>
+        <div class="overskrift">
+            <h1>Loud <span class="red">L</span><span class="pink">a</span><span class="blue">b</span></h1>
+        </div>
 
         <h2>Du skaber LOUD</h2>
         <section>
@@ -44,7 +44,7 @@ get_header(); ?>
             <p> PÅ GRUND AF CORONARESTRIKTIONERNE KAN VI FOR ØJEBLIKKET IKKE 
             AFHOLDE LOUD LAB. DU KAN DOG STADIG GODT TILMELDE DIG, SÅ DU KAN FÅ INFORMATION OM, HVORNÅR VI IGEN SAMLES FOR AT UDVIKLE LOUD.</p>
         </section>
-        
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

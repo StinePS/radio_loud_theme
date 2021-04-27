@@ -51,7 +51,7 @@ h1 {
   font-size: 3rem;
 }
 
-.overskrift {
+.overskrift h1 {
   font-family: 'Gugi', cursive;
 }
 

@@ -29,14 +29,13 @@ get_header(); ?>
             </div>
         </article>
 
-        <section id="episodes">
+        <section id="episodes" class="grid-4">
             <template>
                 <article>
                     <img src="" alt="">
                     <div>
                         <h2></h2>
                         <p class="episode_description"></p>
-                        <a href="">Afspil</a>
                     </div>
                 </article>
             </template>

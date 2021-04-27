@@ -29,7 +29,7 @@ get_header(); ?>
             </div>
         </article>
 
-        <section id="episodes">
+        <section id="episodes" class="grid-4">
             <template>
                 <article>
                     <img src="" alt="">
@@ -80,16 +80,13 @@ get_header(); ?>
                 console.log("showEpisodes");
                 let temp = document.querySelector("template");
                 episoder.forEach(episode => {
-                    console.log("Loop ID :", chosenPodcast);
                     if (episode.hoerer_til_podcast == chosenPodcast) {
-                        console.log("Loop kører ID :", chosenPodcast);
                         let clone = temp.cloneNode(true).content;
                         clone.querySelector("h2").textContent = episode.title.rendered;
                         clone.querySelector(".episode_description").innerHTML = episode.content.rendered;
                         clone.querySelector("article").addEventListener("click", () => {
                             location.href = episode.link;
                         })
-                        console.log("episode", episode.link);
                         container.appendChild(clone);
                     }
                 })

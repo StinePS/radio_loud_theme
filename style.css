@@ -160,20 +160,22 @@ button:hover {
 
 .episode_overskrift {
   font-size: 1.25rem;
+  /*
   text-align: center;
   margin-top: 0.2rem;
 }
 
-/* Scroll snap */
+/* Scroll snap 
 .scroll_container {
   display: flex;
   gap: 1rem;
   padding: 1rem;
-}
-
+}*/
+/*
 .scroll_container article {
   flex-grow: 1;
 }
+*/
 
 /* Farvede H1-bogstaver */
 .red {

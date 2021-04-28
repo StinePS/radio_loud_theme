@@ -168,7 +168,25 @@ button:hover {
 .scroll_container article {
   flex-grow: 1;
 }
-*/
+
+/* Scroll snap på mobil*/
+@media (max-width: 767px) {
+  .scroll_container {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 50%;
+  }
+
+  .scroll_container article {
+    flex-basis: 90%;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+
+  .scroll_container img {
+    margin-right: 1rem;
+  }
+}
 
 /* Farvede H1-bogstaver */
 .red {

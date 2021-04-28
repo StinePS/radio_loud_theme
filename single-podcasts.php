@@ -30,7 +30,7 @@ get_header(); ?>
             </div>
         </article>
 
-        <section id="episodes" class="grid-4">
+        <section id="episodes">
             <h2>Seneste episoder</h2>
             <div class="scroll_container">
             <template>
@@ -52,7 +52,7 @@ get_header(); ?>
 
             const dbUrl = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/podcasts/" + chosenPodcast;
             const episodeUrl = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/episoder?per_page=100";
-            const container = document.querySelector("#episodes");
+            const container = document.querySelector(".scroll_container");
 
             async function getJson() {
                 const data = await fetch(dbUrl);

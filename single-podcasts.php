@@ -18,10 +18,11 @@ get_header(); ?>
             <div>
                 <h1></h1>
                 <p class="podcast_description"></p>
-                <div class="app_knapper"><a class="apple" href=""><img class="wh-2" src="https://loud.land/wp-content/themes/radioloud/dist/images/apple-podcast_2f6140b7.svg" alt="Apple podcast logo"></a>
-                <a class="spotify" href=""><img class="wh-2" src="https://loud.land/wp-content/themes/radioloud/dist/images/spotify_977b3a3c.svg" alt="Spotify logo"></a>
-                <a class="google" href=""><img class="wh-2" src="https://loud.land/wp-content/themes/radioloud/dist/images/google-podcast_27468af1.svg" alt="Google podcast logo"></a>
-                <a class="loud" href="#"><img class="wh-2" src="https://stineplejdrup.dk/kea/09_cms/radio_loud/loud_logo.svg" alt="Radio Loud logo"></a>
+                <div class="app_knapper">
+                    <a class="apple" href=""><img class="wh-2" src="https://loud.land/wp-content/themes/radioloud/dist/images/apple-podcast_2f6140b7.svg" alt="Apple podcast logo"></a>
+                    <a class="spotify" href=""><img class="wh-2" src="https://loud.land/wp-content/themes/radioloud/dist/images/spotify_977b3a3c.svg" alt="Spotify logo"></a>
+                    <a class="google" href=""><img class="wh-2" src="https://loud.land/wp-content/themes/radioloud/dist/images/google-podcast_27468af1.svg" alt="Google podcast logo"></a>
+                    <a class="loud" href="#"><img class="wh-2" src="https://stineplejdrup.dk/kea/09_cms/radio_loud/loud_logo.svg" alt="Radio Loud logo"></a>
                 </div>
             </div>
             <div>
@@ -30,12 +31,15 @@ get_header(); ?>
         </article>
 
         <section id="episodes" class="grid-4">
+            <h2>Seneste episoder</h2>
+            <div class="scroll_container">
             <template>
                 <article>
                     <img class="epi_pic" src="" alt="">
-                    <h2 class=episode_overskrift></h2>
+                    <h3 class=episode_overskrift></h3>
                 </article>
             </template>
+            </div>
         </section>
 
         </main><!-- #main -->
@@ -80,7 +84,7 @@ get_header(); ?>
                     if (episode.hoerer_til_podcast == chosenPodcast) {
                         let clone = temp.cloneNode(true).content;
                         clone.querySelector(".epi_pic").src = episode.billede.guid;
-                        clone.querySelector("h2").textContent = episode.title.rendered;
+                        clone.querySelector("h3").textContent = episode.title.rendered;
                         clone.querySelector("article").addEventListener("click", () => {
                             location.href = episode.link;
                         })

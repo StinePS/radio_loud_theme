@@ -37,7 +37,7 @@ get_header(); ?>
             <button data-podcasts="alle" class="selected">Alle</button>
         </nav>
         <h3 class="filter_name"></h3>
-        <section id="scroll_container">
+        <section id="podcast_gallery" class="scroll_container">
         </section>
     </main>
 
@@ -92,7 +92,7 @@ function filtrering() {
 //funktion der viser podcasts i liste-view
 function showPodcasts(sort) {
     console.log("showPodcasts");
-    let container = document.querySelector(".scroll_container");
+    let container = document.querySelector("#podcast_gallery");
     container.innerHTML = "";
     podcasts.forEach(podcast => {
 if (filter == "alle" || podcast.kategori.includes(filter)) {

@@ -32,7 +32,7 @@ get_header(); ?>
 
         <section id="episodes" class="grid-4">
             <h2>Seneste episoder</h2>
-            <div class="scroll_container">
+            <div class="scroll_cotainer">
             <template>
                 <article>
                     <img class="epi_pic" src="" alt="">

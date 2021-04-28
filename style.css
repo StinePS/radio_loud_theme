@@ -162,31 +162,17 @@ button:hover {
 .scroll_container {
   display: flex;
   gap: 1rem;
-  padding: 1rem;
+  padding: 1rem 0;
   overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scroll-padding: 50%;
 }
 
 .scroll_container article {
-  flex-grow: 1;
-}
-
-/* Scroll snap på mobil*/
-@media (max-width: 767px) {
-  .scroll_container {
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-padding: 50%;
-  }
-
-  .scroll_container article {
-    flex-basis: 90%;
-    flex-shrink: 0;
-    scroll-snap-align: center;
-  }
-
-  .scroll_container img {
-    margin-right: 1rem;
-  }
+  flex-grow: 0;
+  flex-basis: 250px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
 }
 
 /* Farvede H1-bogstaver */

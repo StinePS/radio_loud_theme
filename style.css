@@ -163,6 +163,7 @@ button:hover {
   display: flex;
   gap: 1rem;
   padding: 1rem;
+  overflow-x: auto;
 }
 
 .scroll_container article {

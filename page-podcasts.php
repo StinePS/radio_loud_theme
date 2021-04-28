@@ -20,16 +20,16 @@ get_header(); ?>
             <h1>Podc<span class="red">a</span><span class="pink">s</span><span class="blue">t</span></h1>
         </div>
 
-<template>
-    <article>
-        <a href="">
-            <img src="" alt="">
-            <div>
-                <h2 class="hidden"></h2>
-            </div>
-        </a>
-    </article>
-</template>
+        <template>
+            <article>
+                <a href="">
+                    <img src="" alt="">
+                    <div>
+                    <h2 class="hidden"></h2>
+                    </div>
+                </a>
+            </article>
+        </template>
 
 <section id="podcast_main">
     <main>

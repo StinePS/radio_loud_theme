@@ -47,10 +47,10 @@ get_header(); ?>
 
         <script>
             let podcast;
-            let episodes;
-            let chosenPodcast = <?php echo get_the_ID(); ?>;
+            let episoder;
+            let podcastID = <?php echo get_the_ID(); ?>;
 
-            const dbUrl = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/podcasts/" + chosenPodcast;
+            const dbUrl = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/podcasts/" + podcastID;
             const episodeUrl = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/episoder?per_page=100";
             const container = document.querySelector(".scroll_container");
 
@@ -81,7 +81,7 @@ get_header(); ?>
                 console.log("showEpisodes");
                 let temp = document.querySelector("template");
                 episoder.forEach(episode => {
-                    if (episode.hoerer_til_podcast == chosenPodcast) {
+                    if (episode.hoerer_til_podcast == podcastID) {
                         let clone = temp.cloneNode(true).content;
                         clone.querySelector(".epi_pic").src = episode.billede.guid;
                         clone.querySelector("h3").textContent = episode.title.rendered;

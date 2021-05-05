@@ -19,6 +19,8 @@ get_header(); ?>
     </h1>
     </div>
 
+    <?php include 'lines_right.html'; ?>
+
     <section>
             <h2>Vil du være en del af Radio LOUD?</h2>
             <p>Du er meget velkommen til at sende en ansøgning til <a href="mailto:job@radioloud.dk">job@radioloud.dk</a></p>
@@ -28,6 +30,9 @@ get_header(); ?>
             <h3>Ledige stillinger</h3>
             <p>Vi har desværre ingen jobopslag netop nu.</p>
         </section>
+
+        <?php include 'lines_left.html'; ?>
+
     </main><!-- #main -->
 </section><!-- #primary -->
 <?php get_footer();

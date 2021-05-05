@@ -19,6 +19,8 @@ get_header(); ?>
             </h1>
         </div>
 
+        <?php include 'lines_right.html'; ?>
+
         <section>
             <h2>Lyt til LOUD på DAB, via nettet og i vores app!</h2>
             <h3>Web</h3>
@@ -41,6 +43,8 @@ get_header(); ?>
             <p>LOUD (Kulturradio Danmark A/S) sender på programtilladelse udstedt af Radio- og tv-nævnet (Kulturministeriet, Slots- og Kulturstyrelsen), hvor Radio- og tv-nævnet er den kompetente tilsynsmyndighed. <br>
             Mener du, at LOUD har behandlet dig uretfærdigt som medie, så kan du klage til Pressenævnet. Pressenævnets opgave er at behandle klager over pressen.</p>
         </section>
+
+        <?php include 'lines_left.html'; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

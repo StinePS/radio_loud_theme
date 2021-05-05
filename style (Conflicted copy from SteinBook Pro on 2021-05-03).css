@@ -7,16 +7,14 @@ Author:      KEA 2. sem. Gruppe 2
 */
 
 /* ------------------------------------------ */
-
 /* GENEREL STYLING */
+
 * {
-  padding: 0;
-  margin: 0;
 }
 
 img {
   width: 100%;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 
 main {
@@ -26,11 +24,11 @@ main {
 }
 
 section {
-  padding-top: 0rem;
+  padding-top: 1rem;
 }
 
-section + section {
-  margin-top: 1rem;
+article a {
+  color: #000;
 }
 
 h1 {
@@ -53,7 +51,7 @@ h2 {
   font-weight: 500;
   text-transform: uppercase;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin-bottom: 0;
 }
 
@@ -61,25 +59,13 @@ h3 {
   font-family: 'Baloo 2', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 1.2rem;
-  word-break: break-word;
-}
-
-.big-h3 {
   font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.single_epi {
+  font-size: 1.75rem;
   font-weight: 500;
-}
-
-h4 {
-  font-family: 'Baloo 2', sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.big-h4 {
-  font-size: 1.2rem;
-  font-weight: 400;
 }
 
 /* font-medias */
@@ -90,15 +76,16 @@ h4 {
   h2 {
     font-size: 2rem;
   }
-  .big-h3 {
+  .single_epi {
     font-size: 2rem;
   }
-  h3 {
-    font-size: 1.5rem;
-  }
-  .big-h4 {
-    font-size: 1.5rem;
-  }
+}
+
+h4 {
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 
 p {
@@ -113,6 +100,7 @@ p {
 }
 
 .entry .entry-header {
+  /* margin: calc(3 * 1rem) calc(10% + 60px) 1rem; */
   margin: 0;
   text-align: center;
   color: #000000;
@@ -125,22 +113,37 @@ h2:before {
   display: none;
 }
 
+address {
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  margin: 0.75rem 0;
+}
+
 a {
-  color: #a80000;
   font-family: 'Baloo 2', sans-serif;
   font-weight: 400;
 }
 
 a:visited {
-  color: #a80000;
 }
 
 a:active {
-  color: #a80000;
 }
 
 a:hover {
-  color: #000;
+}
+
+button {
+}
+
+button:active {
+}
+
+button:hover {
 }
 
 .selected {
@@ -149,9 +152,9 @@ a:hover {
 }
 
 /* CLASSES */
-/* "Luft" i toppen af alle sider */
-.content-area {
-  margin-top: 5rem;
+/* margin så header ikke ligger ovenpå splash */
+.site-content {
+  margin-top: 2rem;
 }
 
 /* App-knapper */
@@ -167,8 +170,8 @@ a:hover {
 }
 
 .wh-3 {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
   margin-top: 1rem;
   margin-right: 1rem;
 }
@@ -197,17 +200,9 @@ pod_pic {
 
 .scroll_container article {
   flex-grow: 0;
-  flex-basis: 200px;
+  flex-basis: 250px;
   flex-shrink: 0;
   scroll-snap-align: start;
-  column-gap: 1rem;
-  margin-bottom: 0rem;
-  cursor: pointer;
-}
-
-.scroll_container img {
-  width: 200px;
-  height: 200px;
 }
 
 /* Farvede H1-bogstaver */
@@ -232,17 +227,14 @@ pod_pic {
 /* Farvede striber på tværs */
 .lines_left {
   margin-left: -0.3rem;
-  margin-top: 1.5rem;
 }
 
 .lines_right {
   margin-right: -0.3rem;
-  margin-top: 1.5rem;
 }
 
 /* ------------------------------------------ */
-
-/* SKJULT INDHOLD & MEDIA QUERIES */
+/* SKJULT INDHOLD */
 .hidden {
   display: none;
 }
@@ -251,55 +243,11 @@ pod_pic {
   .hidden_on_mobile {
     display: none;
   }
-
-  .toggle {
-    position: absolute;
-    top: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    right: -6rem;
-    padding-right: 4rem;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-  }
 }
 
 @media (min-width: 768px) {
   .hidden_on_desktop {
     display: none;
-  }
-
-  section {
-    padding-top: 1rem;
-  }
-
-  #menupunkter {
-    display: inline-flex;
-  }
-
-  .scroll_container article {
-    margin-bottom: -1rem;
-    flex-basis: 250px;
-  }
-
-  .scroll_container img {
-    width: 250px;
-    height: 250px;
-  }
-
-  .social-icon {
-    width: 2rem;
-    height: 2rem;
-  }
-
-  .wh-3 {
-    width: 3rem;
-    height: 3rem;
-  }
-
-  .lines_left,
-  .lines_right {
-    margin-top: 2.5rem;
   }
 }
 
@@ -312,8 +260,8 @@ h2::before {
 }
 
 /* ------------------------------------------ */
-
 /* GRIDS */
+
 .grid-2 {
   display: grid;
   grid-template-areas: 'grid-image' 'grid-text';
@@ -342,8 +290,8 @@ h2::before {
 }
 
 /* ------------------------------------------ */
-
 /* HEADER */
+
 header {
   position: fixed;
   top: 0;
@@ -356,19 +304,14 @@ header {
 .header_container {
   max-width: 1200px;
   margin: 0 auto;
-  position: relative;
   display: flex;
-  justify-content: flex-end;
-  padding: 1.7rem;
+  justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .header_container a {
-  padding: 1rem;
-}
-
-.header_container a:hover {
-  color: #000;
+  padding: 1rem 0.75rem;
 }
 
 /* Fjern runde hjørner på LOUD-logo */
@@ -377,24 +320,9 @@ header {
 }
 
 #loud_logo {
-  position: absolute;
   width: 2rem;
   height: 2rem;
-  left: 0;
-  top: 0;
-  margin: 0.5rem;
-}
-
-#search_logo {
-  width: 1.2rem;
-  height: 1.2rem;
-  color: #a80000;
-}
-
-#search_field {
-  width: 5rem;
-  height: 1.4rem;
-  margin: 1rem 0.75rem;
+  margin-left: 0.5rem;
 }
 
 #burgermenu {
@@ -402,39 +330,26 @@ header {
   color: #a80000;
   border: none;
   padding: 0.5rem;
+  margin-right: 0.5rem;
   width: 3rem;
   height: 3rem;
-  position: absolute;
-  top: 0.1rem;
-  right: 7rem;
+  justify-content: flex-end;
 }
 
 #menupunkter {
   position: absolute;
-  margin-right: 6rem;
-}
-
-#menupunkter a {
-  font-weight: 500;
-}
-
-#button_search {
-  background-color: #fff;
-  color: #000;
-  padding: 1rem 0.75rem;
+  align-items: right;
 }
 
 #button_loud_live {
-  position: absolute;
   background-color: #da0a39;
   height: 2rem;
   padding: 0 1rem;
   margin: 0.5rem;
+  line-height: 1;
   font-size: 0.8rem;
   box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.75);
   cursor: pointer;
-  right: 0;
-  top: 0;
 }
 
 #button_loud_live:hover {
@@ -442,8 +357,8 @@ header {
 }
 
 /* ------------------------------------------ */
-
 /* FOOTER */
+
 .footer-container {
   padding: 1rem 0;
   margin: 0 auto;
@@ -459,7 +374,6 @@ header {
 
 #footer1 {
   background-color: #fd92c5;
-  margin-top: 2rem;
 }
 
 #footer2 {
@@ -478,14 +392,9 @@ header {
   max-width: 125px;
 }
 
-.app-store {
-  margin: 0.1rem 0;
-}
-
 footer p {
   color: #fff;
   font-size: 0.8rem;
-  font-weight: 500;
   line-height: 1;
   margin: 0;
 }
@@ -493,7 +402,6 @@ footer p {
 footer a {
   color: #fff;
   font-size: 0.8rem;
-  font-weight: 500;
   line-height: 1;
 }
 
@@ -509,24 +417,8 @@ footer a:hover {
   color: #8a0a28;
 }
 
-address {
-  font-family: 'Baloo 2', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #ffffff;
-  font-size: 0.8rem;
-  font-weight: 500;
-  line-height: 1.3;
-  margin: 0.75rem 0;
-}
-
-/* Job-ikoner i footer */
-.footer_logo {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-
-/* SoMe-ikoner i footer */
+/* SoMe-ikoner i footer
+ */
 .social-navigation ul.social-links-menu li a {
   color: #fff;
 }
@@ -538,32 +430,31 @@ address {
 }
 
 /* ------------------------------------------ */
-
 /* FRONTPAGE*/
-.frontpage-content-area {
-  margin-top: 4rem;
+
+#nye,
+#pop,
+#insta,
+#face {
+  margin-top: -20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
 }
 
-/* SoMe-logos på linje med tekst */
-.social {
-  display: flex;
-  align-items: center;
+.some-logos {
+  display: inline;
 }
 
-.social h3 {
-  color: #000;
-}
-
-.social-icon {
+a .some-icon {
   fill: #000;
-  width: 2rem;
-  height: 2rem;
-  margin-right: 0.2rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 /* ------------------------------------------ */
-
 /* PODCASTGALLERI */
+
 #podcast_gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, 272px);
@@ -571,14 +462,12 @@ address {
 }
 
 /* ------------------------------------------ */
-
 /* PODCAST SINGLE VIEW */
 .entry-meta {
   display: none;
 }
 
 /* ------------------------------------------ */
-
 /* SENDEPLAN */
 .sendeplan_desktop {
   margin-left: -2.8rem;

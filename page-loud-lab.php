@@ -18,6 +18,8 @@ get_header(); ?>
             <h1>Loud <span class="red">L</span><span class="pink">a</span><span class="blue">b</span></h1>
         </div>
 
+        <?php include 'lines_right.html'; ?>
+
         <h2>Du skaber LOUD</h2>
         <section>
             <h3>Hvad er LOUD Lab?</h3>
@@ -44,6 +46,8 @@ get_header(); ?>
             <p> PÅ GRUND AF CORONARESTRIKTIONERNE KAN VI FOR ØJEBLIKKET IKKE 
             AFHOLDE LOUD LAB. DU KAN DOG STADIG GODT TILMELDE DIG, SÅ DU KAN FÅ INFORMATION OM, HVORNÅR VI IGEN SAMLES FOR AT UDVIKLE LOUD.</p>
         </section>
+
+        <?php include 'lines_left.html'; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

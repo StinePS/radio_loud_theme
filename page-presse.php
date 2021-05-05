@@ -19,6 +19,8 @@ get_header(); ?>
     </h1>
     </div>
 
+    <?php include 'lines_right.html'; ?>
+
     <section>
         <h2>Information og pressebilleder</h2>
         <p>Kontakt os venligst på <a href="mailto:presse@radioloud.dk">presse@radioloud.dk</a></p>
@@ -33,6 +35,8 @@ get_header(); ?>
             <h3>LOUD pressemeddelelser</h3> 
             <p>Du finder LOUDs pressemeddelelser på <a href="ritzau.dk/nyhedsrum/radio-loud">ritzau.dk/nyhedsrum/radio-loud</a></p>
         </section>
+
+        <?php include 'lines_left.html'; ?>
 
     </main><!-- #main -->
 </section><!-- #primary -->

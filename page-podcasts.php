@@ -14,7 +14,6 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 
-<!-- Vores kode -->
         <div class="overskrift">
             <h1>Podc<span class="red">a</span><span class="pink">s</span><span class="blue">t</span></h1>
         </div>
@@ -77,11 +76,11 @@ get_header(); ?>
 	</main><!-- #main -->
 
 <script>
-    //variabler og konstanter
+    //Variabler og konstanter
     let podcasts;
-    const dbUrl = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/podcasts?per_page=100";
+    const dbUrl = "/kea/09_cms/radio_loud/wp-json/wp/v2/podcasts?per_page=100";
 
-    //variabler og konstanter til de enkelte sektioner
+    //Variabler og konstanter til de enkelte sektioner
     let allTemp = document.querySelector(".all_temp");
     const allCont = document.querySelector("#all");
 
@@ -91,7 +90,7 @@ get_header(); ?>
     let debateTemp = document.querySelector(".debate_temp");
     const debateCont = document.querySelector("#debate");
 
-    //hent data fra rest api og kald funktioner
+    //Hent data fra rest api og kald funktioner
     async function getJson() {
         const data = await fetch(dbUrl);
         podcasts = await data.json();
@@ -99,6 +98,7 @@ get_header(); ?>
         sortAll();
     }
 
+    //Sortér podcasts alfabetisk a-å
     function sortAll() {
         console.log("sortAll");
         const sort = podcasts.sort((a, b) => {
@@ -114,12 +114,13 @@ get_header(); ?>
 		return 0;
     });
     
-    //kalder showAll med den sorterede variabel
+    //Kalder showAll med den sorterede variabel
     showAll(sort);
     showGender(sort);
     showDebate(sort);
     }
 
+    //Sortér alfabetisk med (sort), klon "all" articles og tilføj link til podcast
     function showAll(sort) {
         console.log("showAll")
         podcasts.forEach(podcast => {
@@ -135,6 +136,7 @@ get_header(); ?>
         })
     }
 
+    //Sortér alfabetisk med (sort), klon "gender" articles og tilføj link til podcast
     function showGender(sort) {
         console.log("showGender")
         podcasts.forEach(podcast => {
@@ -150,6 +152,7 @@ get_header(); ?>
         })
     }
 
+    //Sortér alfabetisk med (sort), klon "debate" articles og tilføj link til podcast
     function showDebate(sort) {
         console.log("showDebate")
         podcasts.forEach(podcast => {
@@ -164,8 +167,6 @@ get_header(); ?>
             }
         })
     }
-
-
 
 getJson();
 

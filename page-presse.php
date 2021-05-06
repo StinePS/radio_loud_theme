@@ -14,16 +14,16 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 
-    <div class="overskrift">
-    <h1>Pre<span class="red">s</span><span class="pink">s</span><span class="blue">e</span>
-    </h1>
-    </div>
+        <div class="overskrift">
+            <h1>Pre<span class="red">s</span><span class="pink">s</span><span class="blue">e</span>
+            </h1>
+        </div>
 
-    <?php include 'lines_right.html'; ?>
+        <?php include 'lines_right.html'; ?>
 
-    <section>
-        <h2>Information og pressebilleder</h2>
-        <p>Kontakt os venligst på <a href="mailto:presse@radioloud.dk">presse@radioloud.dk</a></p>
+        <section>
+            <h2>Information og pressebilleder</h2>
+            <p>Kontakt os venligst på <a href="mailto:presse@radioloud.dk">presse@radioloud.dk</a></p>
         </section>
             
         <section>

@@ -62,17 +62,20 @@ get_header(); ?>
 
 
         <script>
+            //Variabler
             let podcast;
             let episoder;
             let podcastID = <?php echo get_the_ID(); ?>;
             let sort //variabel til sortering
 
-            const dbUrl = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/podcasts/" + podcastID;
-            const episodeUrl = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/episoder?per_page=100";
-            const podcastUrl = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/podcasts/";
+            //Konstanter
+            const dbUrl = "/kea/09_cms/radio_loud/wp-json/wp/v2/podcasts/" + podcastID;
+            const episodeUrl = "/kea/09_cms/radio_loud/wp-json/wp/v2/episoder?per_page=100";
+            const podcastUrl = "/kea/09_cms/radio_loud/wp-json/wp/v2/podcasts/";
             const container1 = document.querySelector(".container1");
             const container2 = document.querySelector(".container2");
 
+            //Asynkrone funktioner til hentning af JSON-data
             async function getJson() {
                 const data = await fetch(dbUrl);
                 podcast = await data.json();
@@ -84,6 +87,7 @@ get_header(); ?>
                 const data3 = await fetch(podcastUrl);
 			    morePodcasts = await data3.json();
 
+                //Kald 3 funktioner
                 showPodcasts();
                 sortEpisodes();
                 showOtherPodcasts();
@@ -94,12 +98,14 @@ get_header(); ?>
                 console.log(podcast.title.rendered);
                 document.querySelector("h1").innerHTML = podcast.title.rendered;
                 document.querySelector(".podcast_description").innerHTML = podcast.lang_beskriv;
+                //Links til valgte podcast på andre platforme
                 document.querySelector(".apple").href = podcast.apple;
                 document.querySelector(".spotify").href = podcast.spotify;
                 document.querySelector(".google").href = podcast.google;
                 document.querySelector(".pod_pic").src = podcast.billede.guid;
             }
 
+            //Sortér episoder efter udgivelsesdato, nyeste først
             function sortEpisodes() {
                 const sort = episoder.sort((a, b) => {
                     let da = new Date(a.udgivelses_date),
@@ -113,10 +119,13 @@ get_header(); ?>
                 console.log("showEpisodes");
                 let temp1 = document.querySelector("template");
                 episoder.forEach(episode => {
+                    //Hvis episode hører til pågældende podcast, så...
                     if (episode.hoerer_til_podcast == podcastID) {
+                        //Klon billede og titel efter skabelonen temp1
                         let clone = temp1.cloneNode(true).content;
                         clone.querySelector(".epi_pic").src = episode.billede.guid;
                         clone.querySelector(".epi_h3").textContent = episode.title.rendered;
+                        //Lyt efter klik på article, gå til episode-link ved klik
                         clone.querySelector("article").addEventListener("click", () => {
                             location.href = episode.link;
                         })
@@ -125,17 +134,17 @@ get_header(); ?>
                 })
             }
 
-            //vis forslag til andre podcasts
+            //Vis forslag til andre podcasts
 		    function showOtherPodcasts() {
 			    console.log("showOtherPodcasts");
 			    let temp2 = document.querySelector(".pod_temp");
-			    //hvis den viste episode hører til podcast, så skal den pågældende podcast ikke vises som forslag
+			    //Hvis episode hører til podcast, så skal pågældende podcast ikke vises som forslag
 			    morePodcasts.filter(podcast_item => podcast_item.id !== podcast.id).forEach(podcast_item => {
-				//klon billede og titel efter skabelonen temp2
+				//Klon billede og titel efter skabelonen temp2
 				let clone = temp2.cloneNode(true).content;
 				clone.querySelector(".pod_pic").src = podcast_item.billede.guid;
 				clone.querySelector(".pod_h3").textContent = podcast_item.title.rendered;
-				//lyt efter klik på article
+				//Lyt efter klik på article, gå til podcastlink ved klik
 				clone.querySelector("article").addEventListener("click", () => {
 					location.href = podcast_item.link;
 				})

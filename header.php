@@ -39,14 +39,18 @@
 
 		<header>
 			<div class="header_container">
+ 				<!-- Loud-logo -->
 				<div id="loud_logo"><a href="/kea/09_cms/radio_loud"><img src="https://stineplejdrup.dk/kea/09_cms/radio_loud/loud_logo.svg" alt="Radio Loud logo" width="44" height="44"></a></div>
 
+				<!-- Burgermenu -->
 				<div class="hidden_on_desktop"><button id="burgermenu" aria-label="menu">
 					<svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
 					</svg></button>
 				</div>
+
 				<div id="menupunkter" class="hidden_on_mobile">
+				<!-- Søgefelt -->
 				<div id="search" class="hidden">
 					<input type="text" id="search_field" name="søgefelt">
 				</div>
@@ -57,25 +61,29 @@
 						</svg>
 					</button>
 				</div>
+ 				<!-- Menupunkter -->
 				<a href="/kea/09_cms/radio_loud/podcasts/">Podcasts</a>
 			 	<a href="/kea/09_cms/radio_loud/sendeplan">Sendeplan</a>
 			 	<a href="/kea/09_cms/radio_loud/loud-lab">LOUD LAB</a>
 				<a href="/kea/09_cms/radio_loud/om-os">Om os</a>
 				</div>
+				<!-- Loud-knap -->
 				<button id="button_loud_live">LOUD Live</button>
 			</div>
 		</header><!-- #masthead -->
 
 	<script>
-	// Lyt efter klik på burgermenu
+	//Lyt efter klik på burgermenu og søgeknap
 	document.querySelector("#burgermenu").addEventListener("click", toggleMenu);
 	document.querySelector("#search_button").addEventListener("click", toggleSearch);
 
+	//Toggle klassen .toggle på #menupunkter, så burgermenu åbner
 	function toggleMenu() {
 		console.log("toggleMenu");
 		document.querySelector("#menupunkter").classList.toggle("toggle");
 	}
 
+	//Toggle 
 	function toggleSearch() {
 		console.log("toggleSearch");
 		document.querySelector("#search").classList.toggle("hidden");

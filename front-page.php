@@ -96,16 +96,17 @@ get_header(); ?>
     let facebook;
 
     //Opretter konstanter for rest api
-    const urlNye = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/episoder?per_page=100"
-    const urlPopular = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/podcasts?per_page=100";
-    const urlInstagram = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/insta";
-    const urlFacebook = "https://stineplejdrup.dk/kea/09_cms/radio_loud/wp-json/wp/v2/face";
+    const urlNye = "/kea/09_cms/radio_loud/wp-json/wp/v2/episoder?per_page=100"
+    const urlPopular = "/kea/09_cms/radio_loud/wp-json/wp/v2/podcasts?per_page=100";
+    const urlInstagram = "/kea/09_cms/radio_loud/wp-json/wp/v2/insta";
+    const urlFacebook = "/kea/09_cms/radio_loud/wp-json/wp/v2/face";
 
     //Opretter variabler for templates og containere
     let nyTemp = document.querySelector(".ny_temp");
     let popTemp = document.querySelector(".pop_temp")
     let instaTemp = document.querySelector(".insta_temp")
     let faceTemp = document.querySelector(".face_temp")
+
     let secNye = document.querySelector("#ny");
     let secPopular = document.querySelector("#pop");
     let secInsta = document.querySelector("#insta");
@@ -129,7 +130,7 @@ get_header(); ?>
         visFacebook();
     }
 
-		//sortér episoder efter udgivelsesdato, nyeste først
+		//Sortér episoder efter udgivelsesdato, nyeste først
 		function sortNye() {
             console.log(sortNye)
 			const sort = nye.sort((a, b) => {
@@ -141,6 +142,7 @@ get_header(); ?>
             console.log("visNye(sort)");
 		}
 
+        //Sortér efter dato med (sort), klon "nyeste" articles og tilføj link til episode
         function visNye(sort) {
             console.log(nye);
             nye.forEach(ny => {
@@ -154,6 +156,7 @@ get_header(); ?>
             });
         }
 
+        //Klon "populære" articles og tilføj link til podcasts
         function visPopular() {
             console.log(popular);
             popular.forEach(popu => {
@@ -167,13 +170,14 @@ get_header(); ?>
             })
         }
 
+        //Klon instagram-articles og tilføj link til Instagram
         function visInstagram() {
             console.log(instagram);
             instagram.forEach(insta => {
                 let klon = instaTemp.cloneNode(true).content;
                 klon.querySelector("img").src = insta.billede.guid;
                 klon.querySelector(".titel").textContent = insta.title.rendered;
-                //lyt efter klik på article
+                //Lyt efter klik på article
                 klon.querySelector("article").addEventListener("click", () => {
 						location.href = "https://www.instagram.com/radio.louddk/";
 					})
@@ -181,13 +185,14 @@ get_header(); ?>
             })
         }
 
+        //Klon facebook-articles og tilføj link til Facebook
         function visFacebook() {
             console.log(facebook);
             facebook.forEach(face => {
                 let klon = faceTemp.cloneNode(true).content;
                 klon.querySelector("img").src = face.billede.guid;
                 klon.querySelector(".titel").textContent = face.title.rendered;
-                //lyt efter klik på article
+                //Lyt efter klik på article
                 klon.querySelector("article").addEventListener("click", () => {
 						location.href = "https://www.facebook.com/radiolouddanmark/";
 					})

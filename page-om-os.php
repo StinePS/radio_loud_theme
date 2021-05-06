@@ -24,7 +24,7 @@ get_header(); ?>
         <section>
             <h2>Lyt til LOUD på DAB, via nettet og i vores app!</h2>
             <h3>Web</h3>
-            <p>Du kan lytte til LOUD her på hjemmesiden: Klik blot på ”LOUD live” på forsiden eller ved at finde vores <a href="https://stineplejdrup.dk/kea/09_cms/radio_loud/podcasts/">podcasts</a>.</p>
+            <p>Du kan lytte til LOUD her på hjemmesiden: Klik blot på ”LOUD live” på forsiden eller ved at finde vores <a href="/kea/09_cms/radio_loud/podcasts/">podcasts</a>.</p>
         </section>
         
         <section>
